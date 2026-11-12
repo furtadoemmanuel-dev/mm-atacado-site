@@ -124,9 +124,36 @@ dialog::backdrop{background:#181818aa}
 .desktop-nav{padding:4px;border:1px solid var(--line);border-radius:99px;background:#fff;gap:3px}
 .desktop-nav a{padding:8px 15px;border-radius:99px}
 .desktop-nav a[aria-current="location"]{background:var(--ink);color:#fff}
-@media(prefers-reduced-motion:no-preference){
-  dialog[open] .dialog-shell{animation:product-focus .3s cubic-bezier(.22,1,.36,1) both}
-  @keyframes product-focus{from{opacity:.5;transform:translateY(13px) scale(.98)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: no-preference) {
+  .home dialog {
+    --dialog-ease: cubic-bezier(.22, 1, .36, 1);
+    opacity: 0;
+    transform: translateY(12px) scale(.985);
+    transition: opacity 240ms ease, transform 320ms var(--dialog-ease),
+      display 320ms allow-discrete, overlay 320ms allow-discrete;
+  }
+
+  .home dialog[open] { opacity: 1; transform: none; }
+
+  .home dialog::backdrop {
+    opacity: 0;
+    transition: opacity 220ms ease, display 320ms allow-discrete, overlay 320ms allow-discrete;
+  }
+
+  .home dialog[open]::backdrop { opacity: 1; }
+
+  .home dialog .dialog-shell {
+    transform: translateY(18px);
+    transition: transform 380ms var(--dialog-ease);
+  }
+
+  .home dialog[open] .dialog-shell { transform: none; }
+
+  @starting-style {
+    .home dialog[open] { opacity: 0; transform: translateY(12px) scale(.985); }
+    .home dialog[open]::backdrop { opacity: 0; }
+    .home dialog[open] .dialog-shell { transform: translateY(18px); }
+  }
 }
 
 .mobile-nav a[aria-current="location"]{color:var(--red-dark)}
