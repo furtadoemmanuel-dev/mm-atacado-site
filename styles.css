@@ -625,3 +625,64 @@ html { --header-height: 116px; }
 .engrenagem-text dt { margin-top: 8px; font-weight: 700; }
 .engrenagem-text dd { margin-inline-start: 0; }
 .engrenagem-page { display: block; width: 100%; height: auto; }
+
+.catalog-edition { max-width: min(calc(100% - 24px), 840px); }
+.catalog-brand-grid, .catalog-centers-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  padding: 0;
+  margin: 18px 0 0;
+  list-style: none;
+}
+.catalog-brand-grid li {
+  aspect-ratio: 208 / 96;
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 1px var(--line);
+  background: #fff url('assets/catalogo-2026-marcas.webp') var(--logo-x) var(--logo-y) / 400% 900% no-repeat;
+}
+.catalog-centers-map { position: relative; overflow: hidden; margin-top: 16px; border: 1px solid var(--line); border-radius: 12px; }
+.catalog-centers-map img { width: 100%; }
+.catalog-map-pin {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: clamp(10px, 2%, 16px);
+  aspect-ratio: 1;
+  border: 2px solid white;
+  border-radius: 50%;
+  background: var(--red-dark);
+  box-shadow: 0 0 0 2px #18181870;
+  translate: -50% -50%;
+}
+.catalog-centers-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+.catalog-centers-list span { flex: none; color: var(--red-dark); font-weight: 850; }
+.catalog-centers-list li:hover { border-color: var(--red); background: #fff5f5; }
+.catalog-edition:has(.catalog-centers-list [data-state="PR"]:hover) .catalog-map-pin[data-state="PR"],
+.catalog-edition:has(.catalog-centers-list [data-state="PB"]:hover) .catalog-map-pin[data-state="PB"],
+.catalog-edition:has(.catalog-centers-list [data-state="BA"]:hover) .catalog-map-pin[data-state="BA"],
+.catalog-edition:has(.catalog-centers-list [data-state="MS"]:hover) .catalog-map-pin[data-state="MS"] {
+  scale: 1.45;
+  box-shadow: 0 0 0 3px var(--red);
+}
+@media (min-width: 480px) { .catalog-brand-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (min-width: 650px) { .catalog-brand-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (prefers-reduced-motion: no-preference) {
+  .catalog-map-pin { transition: scale 200ms ease, box-shadow 200ms ease; }
+  .catalog-edition[open] :is(.catalog-map-pin, .catalog-centers-list li) {
+    animation: catalog-center-in 400ms cubic-bezier(.22, 1, .36, 1) calc(100ms + var(--order) * 65ms) both;
+  }
+  @keyframes catalog-center-in {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: none; }
+  }
+}

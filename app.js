@@ -474,8 +474,10 @@ leadForm.addEventListener('submit', async event => {
   }
 });
 
-const engrenagemDialog = document.querySelector('#engrenagem-dialog');
-document.querySelector('#engrenagem-open').addEventListener('click', () => engrenagemDialog.showModal());
-engrenagemDialog.addEventListener('click', event => {
-  if (event.target === engrenagemDialog) engrenagemDialog.close();
+document.querySelectorAll('[data-open-dialog]').forEach(button => {
+  const panel = document.getElementById(button.dataset.openDialog);
+  button.addEventListener('click', () => panel.showModal());
+  panel.addEventListener('click', event => {
+    if (event.target === panel) panel.close();
+  });
 });
