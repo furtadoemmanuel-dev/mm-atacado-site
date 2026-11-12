@@ -1,0 +1,74 @@
+[
+  {
+    "id": "67309",
+    "brand": "Brastemp",
+    "name": "Refrigerador Inverse 554 L",
+    "model": "BRO85AK",
+    "category": "Eletrodomésticos",
+    "image": "geladeira",
+    "tags": "cozinha geladeira freezer linha branca"
+  },
+  {
+    "id": "74297",
+    "brand": "Philco",
+    "name": "Smart TV 58” 4K UHD",
+    "model": "P58KGA",
+    "category": "TV e áudio",
+    "image": "tv",
+    "tags": "televisão tvs televisores sala eletrônicos google tv"
+  },
+  {
+    "id": "75329",
+    "brand": "Midea",
+    "name": "Air Fryer WideMax 5,5 L",
+    "model": "WideMax",
+    "category": "Eletroportáteis",
+    "image": "airfryer",
+    "tags": "cozinha fritadeira elétrica airfryer air fryer"
+  },
+  {
+    "id": "74971",
+    "brand": "Samsung",
+    "name": "Galaxy A17 128 GB 4G",
+    "model": "A175",
+    "category": "Telefonia",
+    "image": "celular",
+    "tags": "celular celulares smartphone smartphones tecnologia telefone"
+  },
+  {
+    "id": "74571",
+    "brand": "Itatiaia",
+    "name": "Cozinha Rose 4 peças",
+    "model": "Rose",
+    "category": "Móveis",
+    "image": "cozinha",
+    "tags": "cozinha armário armários mobiliário kits"
+  },
+  {
+    "id": "74794",
+    "brand": "Consul",
+    "name": "Refrigerador Frost Free 333 L",
+    "model": "CRM40MB",
+    "category": "Eletrodomésticos",
+    "image": "consul",
+    "tags": "cozinha geladeira freezer linha branca"
+  },
+  {
+    "id": "73724",
+    "brand": "Aiwa",
+    "name": "Caixa de som Boombox",
+    "model": "AWS-BBS01B",
+    "category": "TV e áudio",
+    "image": "som",
+    "tags": "bluetooth speaker eletrônicos caixa de som sala"
+  },
+  {
+    "id": "74929",
+    "brand": "Houston",
+    "name": "Bicicleta Aro 26 Super Forte",
+    "model": "Super Forte",
+    "category": "Esporte e lazer",
+    "image": "bike",
+    "tags": "bicicletas bike bikes aro 26"
+  }
+]

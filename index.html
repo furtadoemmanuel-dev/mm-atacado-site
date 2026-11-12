@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#181818">
+  <meta name="description" content="Explore móveis, eletrodomésticos e tecnologia para revenda. Conheça o MM Atacado, do Grupo MM.">
+  <title>MM Atacado | O atacado que mais cresce no Brasil</title>
+  <link rel="icon" href="assets/mm-atacado.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body class="home corporate">
+  <a class="skip" href="#principal">Pular para o conteúdo</a>
+  <svg class="symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.7" cy="10.7" r="6.3"/><path d="m15.3 15.3 4.7 4.7"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M6 18 18 6M7 6h11v11"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 2c0 6-4 10-10 10 6 0 10 4 10 10 0-6 4-10 10-10-6 0-10-4-10-10Z"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M4.5 21v-2a5 5 0 0 1 5-5h5a5 5 0 0 1 5 5v2"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20 16a2 2 0 0 1-2 2H9l-5 3V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2Z"/><path d="M8 9h8m-8 4h5"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V2m6 2V2M9 10h6m-6 5h6"/></symbol>
+  </svg>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="MM Atacado, início"><img src="assets/mm-atacado.png" alt="MM Atacado" width="160" height="35"></a>
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <a href="#grupo">Sobre o MM</a><a href="#catalogo">Catálogo</a><a href="#atendimento">Atendimento</a>
+      </nav>
+      <div class="header-actions">
+        <a href="#busca" class="header-search" aria-label="Buscar produtos"><svg aria-hidden="true"><use href="#i-search"/></svg><span>Buscar</span></a>
+        <button class="plain list-open" type="button" aria-label="Minha seleção"><svg><use href="#i-list"/></svg><span>Minha seleção</span><span class="list-count" hidden></span></button>
+        <a class="button dark area" href="https://mmatacado.com.br/#/fazerLogin"><svg><use href="#i-user"/></svg> Área do lojista</a>
+      </div>
+    </div>
+    <div class="department-bar">
+      <div class="container department-bar-inner">
+        <details id="department-menu">
+          <summary>Departamentos</summary>
+          <div id="department-menu-content"><a href="#departamentos">Ver departamentos</a></div>
+        </details>
+        <a href="#destaques">Produtos em destaque</a>
+        <a href="#cadastro">Cadastrar minha empresa</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="principal">
+    <section class="corporate-hero" id="inicio" aria-label="Destaques do MM Atacado">
+      <div id="story-track" class="story-track" tabindex="0" aria-label="Painéis de destaque">
+        <article class="story-slide black-hero" aria-labelledby="black-title">
+          <img src="assets/black-fabrica-10-anos.webp" alt="Selo de 10 anos do MM Atacado ao lado de eletrodomésticos" fetchpriority="high">
+          <div class="black-hero-copy">
+            <h2 id="black-title">Black Fábrica</h2>
+            <a class="button red" href="#catalogo">Explorar catálogo <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+        <article class="story-slide product-hero">
+          <div class="hero-products" id="hero-products"></div>
+          <div class="story-panel">
+            <div><p class="eyebrow"><span></span> MM ATACADO PARA LOJISTAS</p><h1 id="hero-title">O atacado que mais<br><em>cresce no Brasil.</em></h1></div>
+            <div class="story-action"><p>Móveis, eletrodomésticos e tecnologia no atacado para sua loja.</p><a class="button white" href="#catalogo">Explorar catálogo <svg aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="button red" href="#cadastro">Cadastrar minha empresa</a></div>
+          </div>
+        </article>
+        <article class="story-slide">
+          <img src="assets/grupo.webp" alt="Colaboradores reunidos em frente à unidade do Grupo MM" width="1460" height="973">
+          <div class="story-panel">
+            <div><p class="eyebrow"><span></span> GENTE QUE FAZ O MM</p><h2>De lojista<br><em>para lojista.</em></h2></div>
+            <div class="story-action"><p>Converse com quem entende o dia a dia do varejo e pode ajudar a escolher o mix da sua loja.</p><a class="button white" href="#atendimento">Conhecer nosso time <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+          </div>
+        </article>
+      </div>
+      <div class="story-controls" aria-label="Navegar pelos destaques">
+        <button class="story-prev" type="button" aria-label="Destaque anterior" aria-controls="story-track"><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        <button class="story-next" type="button" aria-label="Próximo destaque" aria-controls="story-track"><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      </div>
+      <div class="story-timer" aria-hidden="true"><span></span></div>
+      <div class="story-progress" aria-label="Selecionar destaque">
+        <button class="story-pause" type="button" aria-label="Pausar slides" hidden>Ⅱ</button>
+        <button type="button" data-story="0" aria-label="Destaque 1 de 3" aria-current="true"></button>
+        <button type="button" data-story="1" aria-label="Destaque 2 de 3"></button>
+        <button type="button" data-story="2" aria-label="Destaque 3 de 3"></button>
+      </div>
+    </section>
+
+    <section id="destaques" class="container product-showcase" aria-labelledby="showcase-title" hidden>
+      <div class="showcase-header">
+        <div><p class="eyebrow"><span></span> VITRINE MM</p><h2 id="showcase-title">Produtos em destaque</h2></div>
+        <div class="showcase-controls" role="group" aria-label="Navegação dos produtos">
+          <button class="icon-button showcase-prev" type="button" aria-label="Produtos anteriores" aria-controls="showcase-track" aria-disabled="true"><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          <button class="icon-button showcase-next" type="button" aria-label="Próximos produtos" aria-controls="showcase-track"><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        </div>
+      </div>
+      <div id="showcase-track" class="showcase-track" tabindex="0" role="group" aria-label="Carrossel de produtos"></div>
+    </section>
+
+    <section id="grupo" class="manifesto" aria-labelledby="group-title">
+      <img src="assets/centro-distribuicao.webp" alt="Veículos na área externa do centro de distribuição do MM" width="1467" height="1100" loading="lazy">
+      <div class="container manifesto-inner">
+        <p class="eyebrow">SOBRE O MM</p>
+        <h2 id="group-title">Experiência de varejo.<br><em>Parceria de atacado.</em></h2>
+        <div><p>O Grupo MM atua no varejo desde 1978. Em 2016, nasceu o MM Atacado para apoiar pequenos e médios varejistas.</p><a class="button white" href="https://grupomercadomoveis.com.br/">Conheça o Grupo MM <svg aria-hidden="true"><use href="#i-up"/></svg></a></div>
+      </div>
+    </section>
+
+    <div class="container">
+      <section class="departments" id="departamentos" aria-labelledby="departments-title">
+        <div class="section-head">
+          <div><p class="eyebrow"><span></span> ENCONTRE SEU MIX</p><h2 id="departments-title">Explore por departamento</h2></div>
+          <p>Móveis, eletrodomésticos e tecnologia para o dia a dia do varejo.</p>
+        </div>
+        <div id="department-tiles" class="department-tiles"></div>
+        <a class="text-link" href="#catalogo" id="full-catalog">Ver catálogo completo <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </section>
+
+      <section class="discovery" id="busca" aria-labelledby="search-title">
+        <div>
+          <p class="eyebrow"><span></span> BUSCA DO CATÁLOGO</p>
+          <h2 id="search-title">O que sua loja precisa?</h2>
+        </div>
+        <div>
+          <form id="search-form" class="search" role="search">
+            <label class="sr-only" for="query">Descreva o que sua loja precisa</label>
+            <svg aria-hidden="true"><use href="#i-spark"/></svg>
+            <input id="query" name="q" type="search" autocomplete="off" maxlength="180" placeholder="Produto ou marca">
+            <button class="button dark" type="submit"><span>Buscar</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          </form>
+          <div class="prompts" aria-label="Exemplos de busca">
+            <span>Experimente</span><button type="button" data-query="Quero montar um mix de cozinha">Mix de cozinha</button><button type="button" data-query="Quero TVs e celulares para revender">TVs e celulares</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog" id="catalogo" aria-labelledby="catalog-title">
+        <div class="section-head">
+          <div><p class="eyebrow"><span></span> VITRINE MM</p><h2 id="catalog-title">Explore o catálogo</h2></div>
+          <p>Selecione produtos e converse com nosso time sobre as condições para sua loja.</p>
+        </div>
+        <div class="filters" role="group" aria-label="Filtrar por categoria" id="filters"></div>
+        <div class="results-bar"><p id="results" role="status" aria-live="polite"></p><button type="button" id="reset" class="plain" hidden>Limpar busca</button></div>
+        <div class="products" id="products"></div>
+        <p class="catalog-note">Vitrine demonstrativa com itens do catálogo MM. Consulte preços, estoque e condições com o time comercial.</p>
+      </section>
+
+      <section id="cadastro" class="lead-section" aria-labelledby="lead-title">
+        <h2 id="lead-title">Cadastre sua empresa</h2>
+        <p>Deixe seus dados para conversar com a equipe comercial do MM Atacado.</p>
+        <form id="lead-form" action="/api/leads" method="post">
+          <div class="lead-fields">
+            <label>Nome <input name="name" autocomplete="name" maxlength="100" required></label>
+            <label>Empresa <input name="company" autocomplete="organization" maxlength="120" required></label>
+            <label>E-mail <input name="email" type="email" autocomplete="email" maxlength="160" required></label>
+            <label>Telefone ou WhatsApp <input name="phone" type="tel" autocomplete="tel" maxlength="24" required></label>
+            <label>Cidade <input name="city" autocomplete="address-level2" maxlength="80" required></label>
+            <label>UF <input name="state" autocomplete="address-level1" placeholder="PR" maxlength="2" pattern="[A-Za-z]{2}" required></label>
+          </div>
+          <button class="button red" type="submit" disabled>Enviar cadastro</button><p>O envio do formulário está desativado nesta prévia.</p>
+          <p id="lead-status" role="status"></p>
+        </form>
+      </section>
+
+      <section id="atendimento" class="team" aria-labelledby="team-title">
+        <div>
+          <p class="eyebrow"><span></span> GENTE QUE FAZ O MM</p>
+          <h2 id="team-title">Quem atende sua loja faz parte dessa história.</h2>
+          <p>Da escolha do mix à consulta das condições comerciais, nosso time está ao seu lado. Conte o que sua loja precisa e converse com quem conhece o dia a dia do varejo.</p>
+          <div class="team-actions">
+            <a class="button dark" href="#cadastro">Cadastrar minha empresa</a>
+            <a class="button red" href="mailto:atacado@mmatacado.com.br"><svg><use href="#i-chat"/></svg> Falar com o time</a>
+            <a class="plain phone" href="tel:08001420420">0800 142 0420 · opção 1</a>
+          </div>
+        </div>
+        <figure><img src="assets/equipe.webp" alt="Colaboradores do MM Atacado juntos no escritório durante a Black Fábrica" loading="lazy" width="1460" height="973"><figcaption>Nosso time durante a Black Fábrica.</figcaption></figure>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner"><a class="brand" href="#inicio"><img src="assets/mm-atacado.png" alt="MM Atacado" width="160" height="35"></a><p>Uma empresa do Grupo MM<br>R. Vítor Meireles, 288 · Ronda, Ponta Grossa – PR · CEP 84051-300</p><a href="#cadastro">Cadastrar minha empresa <svg><use href="#i-up"/></svg></a></div>
+  </footer>
+  <nav class="mobile-nav" aria-label="Atalhos para celular">
+    <a href="#catalogo"><svg><use href="#i-grid"/></svg>Catálogo</a>
+    <button type="button" id="mobile-search"><svg><use href="#i-spark"/></svg>Buscar</button>
+    <a href="#atendimento"><svg><use href="#i-chat"/></svg>Contato</a>
+    <a href="https://mmatacado.com.br/#/fazerLogin"><svg><use href="#i-user"/></svg>Área do lojista</a>
+  </nav>
+  <a class="floating-contact" href="#atendimento" aria-label="Atendimento comercial">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 11.7a8.8 8.8 0 0 1-13.1 7.7L3 21l1.5-4.6a8.8 8.8 0 1 1 16.3-4.7Z"/><path d="M9 7.8c-.7-.5-1.6.4-1.5 1.4.3 2.8 3.5 6 6.3 6.3 1 .1 1.9-.8 1.4-1.5l-1.8-1c-.4-.2-.8.4-1.1.7-1.3-.5-2.4-1.6-2.9-2.9.3-.3.9-.7.7-1.1Z" fill="currentColor" stroke="none"/></svg>
+  </a>
+  <dialog id="dialog" aria-labelledby="dialog-title">
+    <div class="dialog-shell">
+      <form method="dialog"><button class="icon-button close" aria-label="Fechar"><svg><use href="#i-close"/></svg></button></form>
+      <div id="dialog-content"></div>
+    </div>
+  </dialog>
+  <p class="sr-only" id="selection-status" role="status"></p>
+</body>
+</html>
