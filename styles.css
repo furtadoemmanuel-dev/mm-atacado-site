@@ -562,3 +562,11 @@ html { scroll-padding-top: 135px; }
     to { opacity: 1; transform: translateX(0); }
   }
 }
+
+#engrenagem-open { margin-inline-end: 8px; }
+.engrenagem-text { margin-block: 12px; }
+.engrenagem-text summary { width: fit-content; cursor: pointer; font-weight: 700; }
+.engrenagem-text dl { margin-block: 12px; }
+.engrenagem-text dt { margin-top: 8px; font-weight: 700; }
+.engrenagem-text dd { margin-inline-start: 0; }
+.engrenagem-page { display: block; width: 100%; height: auto; }

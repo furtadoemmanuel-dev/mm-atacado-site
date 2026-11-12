@@ -473,3 +473,9 @@ leadForm.addEventListener('submit', async event => {
     submit.disabled = false;
   }
 });
+
+const engrenagemDialog = document.querySelector('#engrenagem-dialog');
+document.querySelector('#engrenagem-open').addEventListener('click', () => engrenagemDialog.showModal());
+engrenagemDialog.addEventListener('click', event => {
+  if (event.target === engrenagemDialog) engrenagemDialog.close();
+});
