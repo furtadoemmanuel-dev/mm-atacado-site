@@ -248,10 +248,11 @@ function renderCommercialNavigation() {
   }
 
   menuContent.innerHTML = [...grouped].map(([category, items]) => `
-    <section class="menu-category">
-      <button type="button" data-category="${categories.indexOf(category)}">${escapeHtml(category)}</button>
-      ${items.slice(0, 4).map(product => `<button type="button" data-detail="${escapeHtml(product.id)}">${escapeHtml(product.name)}</button>`).join('')}
-    </section>`).join('') + '<a href="#departamentos">Ver todos os departamentos</a>';
+    <button class="menu-department-card" type="button" data-category="${categories.indexOf(category)}">
+      <img src="${escapeHtml(photo(items[0]))}" alt="" width="90" height="90">
+      <span>${escapeHtml(category)}</span>
+      ${icon('arrow')}
+    </button>`).join('') + '<a class="menu-catalog-link" href="#catalogo" data-menu-all>Ver catálogo completo ' + icon('arrow') + '</a>';
 
   const featured = [...grouped.values()].slice(0, 3).map(items => items[0]);
   heroProducts.innerHTML = featured.map(product => `
@@ -262,27 +263,40 @@ function renderCommercialNavigation() {
 }
 
 let menuCloseTimer;
-let openedByHover = false;
+const departmentTrigger = departmentMenu.querySelector('summary');
 
 departmentMenu.addEventListener('pointerenter', event => {
   if (event.pointerType !== 'mouse') return;
   clearTimeout(menuCloseTimer);
-  if (!departmentMenu.open) {
-    departmentMenu.open = true;
-    openedByHover = true;
-  }
+  departmentMenu.open = true;
 });
 
 departmentMenu.addEventListener('pointerleave', event => {
-  if (event.pointerType !== 'mouse' || !openedByHover) return;
+  if (event.pointerType !== 'mouse') return;
   menuCloseTimer = setTimeout(() => {
     if (!departmentMenu.matches(':focus-within')) departmentMenu.open = false;
-  }, 180);
+  }, 220);
 });
 
-departmentMenu.querySelector('summary').addEventListener('click', () => {
-  openedByHover = false;
+departmentTrigger.addEventListener('click', event => {
   clearTimeout(menuCloseTimer);
+  // Hover already opened the menu. A mouse click should keep it available.
+  if (event.pointerType === 'mouse' && matchMedia('(hover: hover)').matches) {
+    event.preventDefault();
+    departmentMenu.open = true;
+  }
+});
+
+departmentTrigger.addEventListener('keydown', event => {
+  if (event.key !== 'ArrowDown') return;
+  event.preventDefault();
+  departmentMenu.open = true;
+  menuContent.querySelector('button, a')?.focus();
+});
+departmentMenu.addEventListener('focusout', event => {
+  if (!departmentMenu.contains(event.relatedTarget) && !departmentMenu.matches(':hover')) {
+    departmentMenu.open = false;
+  }
 });
 
 menuContent.addEventListener('click', event => {
@@ -290,6 +304,7 @@ menuContent.addEventListener('click', event => {
   const detail = event.target.closest('[data-detail]');
   if (!categoryButton && !detail && !event.target.closest('a')) return;
   departmentMenu.open = false;
+  if (event.target.closest('[data-menu-all]')) resetQuery(true);
   if (detail) {
     departmentMenu.querySelector('summary').focus();
     openDialog(byId(detail.dataset.detail));
@@ -641,3 +656,37 @@ galleryTrack.addEventListener('keydown', event => {
 });
 new ResizeObserver(updateGalleryArrows).observe(galleryTrack);
 updateGalleryArrows();
+
+// Scroll parallax shares the existing pause control and reduced-motion setting.
+let heroScrollFrame = 0;
+
+function updateHeroScroll() {
+  heroScrollFrame = 0;
+  if (!motion.matches) {
+    campaignHero.style.setProperty('--hero-scroll-shift', '0px');
+    campaignHero.style.setProperty('--hero-scroll-detail', '0px');
+    return;
+  }
+  if (heroMotionPaused || document.hidden) return;
+  const bounds = campaignHero.getBoundingClientRect();
+  if (bounds.bottom <= 0 || bounds.top >= window.innerHeight) return;
+  const headerHeight = document.querySelector('.header').offsetHeight;
+  const distance = Math.max(0, headerHeight - bounds.top);
+  const strength = heroFinePointer.matches ? .28 : .12;
+  const shift = Math.min(distance * strength, bounds.height * .13);
+  campaignHero.style.setProperty('--hero-scroll-shift', shift.toFixed(2) + 'px');
+  campaignHero.style.setProperty('--hero-scroll-detail', Math.min(shift * .4, 36).toFixed(2) + 'px');
+}
+
+function scheduleHeroScroll() {
+  if (!heroScrollFrame) heroScrollFrame = requestAnimationFrame(updateHeroScroll);
+}
+
+window.addEventListener('scroll', scheduleHeroScroll, { passive: true });
+window.addEventListener('resize', scheduleHeroScroll);
+heroMotionToggle.addEventListener('click', scheduleHeroScroll);
+motion.addEventListener('change', scheduleHeroScroll);
+heroFinePointer.addEventListener('change', scheduleHeroScroll);
+document.addEventListener('visibilitychange', scheduleHeroScroll);
+new ResizeObserver(scheduleHeroScroll).observe(campaignHero);
+scheduleHeroScroll();
