@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#181818">
   <meta name="description" content="Explore móveis, eletrodomésticos e tecnologia para revenda. Conheça o MM Atacado, do Grupo MM.">
-  <title>MM Atacado | O atacado que mais cresce no Brasil</title>
+  <title>MM Atacado | Móveis e eletros no atacado para lojistas</title>
   <link rel="icon" href="assets/mm-atacado.png">
-  <link rel="stylesheet" href="styles.css">
-  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=16">
+  <script src="app.js?v=15" defer></script>
 </head>
 <body class="home corporate">
   <a class="skip" href="#principal">Pular para o conteúdo</a>
@@ -28,11 +28,12 @@
   <header class="header">
     <div class="container header-inner">
       <a class="brand" href="#inicio" aria-label="MM Atacado, início"><img src="assets/mm-atacado.png" alt="MM Atacado" width="160" height="35"></a>
-      <nav class="desktop-nav" aria-label="Navegação principal">
-        <a href="#grupo">Sobre o MM</a><a href="#catalogo">Catálogo</a><a href="#atendimento">Atendimento</a>
-      </nav>
+      <form id="header-search" class="header-catalog-search" role="search" aria-label="Buscar no catálogo">
+        <label class="sr-only" for="header-query">Nome, marca ou código do produto</label>
+        <input type="search" id="header-query" name="q" placeholder="Busque por produto, marca ou código" required>
+        <button type="submit" aria-label="Buscar produtos"><svg aria-hidden="true"><use href="#i-search"/></svg></button>
+      </form>
       <div class="header-actions">
-        <a href="#busca" class="header-search" aria-label="Buscar produtos"><svg aria-hidden="true"><use href="#i-search"/></svg><span>Buscar</span></a>
         <button class="plain list-open" type="button" aria-label="Minha seleção"><svg><use href="#i-list"/></svg><span>Minha seleção</span><span class="list-count" hidden></span></button>
         <a class="button dark area" href="https://mmatacado.com.br/#/fazerLogin"><svg><use href="#i-user"/></svg> Área do lojista</a>
       </div>
@@ -43,47 +44,63 @@
           <summary>Departamentos</summary>
           <div id="department-menu-content"><a href="#departamentos">Ver departamentos</a></div>
         </details>
-        <a href="#destaques">Produtos em destaque</a>
+        <a href="#destaques">Produtos em destaque</a><a href="#galeria">Galeria</a>
         <a href="#cadastro">Cadastrar minha empresa</a>
       </div>
     </div>
   </header>
 
   <main id="principal">
-    <section class="corporate-hero" id="inicio" aria-label="Destaques do MM Atacado">
-      <div id="story-track" class="story-track" tabindex="0" aria-label="Painéis de destaque">
-        <article class="story-slide black-hero" aria-labelledby="black-title">
-          <img src="assets/black-fabrica-10-anos.webp" alt="Selo de 10 anos do MM Atacado ao lado de eletrodomésticos" fetchpriority="high">
-          <div class="black-hero-copy">
-            <h2 id="black-title">Black Fábrica</h2>
-            <a class="button red" href="#catalogo">Explorar catálogo <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    <section class="corporate-hero campaign-hero" id="inicio" aria-label="Campanhas e produtos MM Atacado">
+      <div class="hero-stage">
+      <article class="hero-scene" id="hero-campaign" aria-labelledby="campaign-title">
+        <div class="hero-copy">
+          <p class="eyebrow">MM ATACADO · 10 ANOS</p>
+          <h1 id="campaign-title">Black <br><span>Fábrica.</span></h1>
+          <p class="hero-description">Móveis, eletros e tecnologia para renovar o mix da sua loja.</p>
+          <div class="hero-actions">
+            <a class="button red" href="#catalogo">Explorar produtos <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="hero-text-link" href="#atendimento">Consultar condições</a>
           </div>
-        </article>
-        <article class="story-slide product-hero">
-          <div class="hero-products" id="hero-products"></div>
-          <div class="story-panel">
-            <div><p class="eyebrow"><span></span> MM ATACADO PARA LOJISTAS</p><h1 id="hero-title">O atacado que mais<br><em>cresce no Brasil.</em></h1></div>
-            <div class="story-action"><p>Móveis, eletrodomésticos e tecnologia no atacado para sua loja.</p><a class="button white" href="#catalogo">Explorar catálogo <svg aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="button red" href="#cadastro">Cadastrar minha empresa</a></div>
+        </div>
+        <a class="hero-art" href="#catalogo" aria-label="Explorar os produtos da Black Fábrica">
+          <img class="campaign-art" src="assets/hero-samsung.webp" width="1493" height="739" fetchpriority="high" alt="Seleção de produtos Samsung com televisores, refrigeradores, lavadora, ar-condicionado e eletrônicos">
+        </a>
+      </article>
+      <article class="hero-scene" id="hero-selection" aria-labelledby="selection-title" hidden>
+        <div class="hero-copy">
+          <p class="eyebrow">PRODUTOS PARA REVENDA</p>
+          <h2 id="selection-title">Seu próximo<br><span>mix começa aqui.</span></h2>
+          <p class="hero-description">Explore o catálogo, selecione os produtos e converse com nosso time comercial.</p>
+          <div class="hero-actions">
+            <a class="button red" href="#catalogo">Montar minha seleção <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
           </div>
-        </article>
-        <article class="story-slide">
-          <img src="assets/grupo.webp" alt="Colaboradores reunidos em frente à unidade do Grupo MM" width="1460" height="973">
-          <div class="story-panel">
-            <div><p class="eyebrow"><span></span> GENTE QUE FAZ O MM</p><h2>De lojista<br><em>para lojista.</em></h2></div>
-            <div class="story-action"><p>Converse com quem entende o dia a dia do varejo e pode ajudar a escolher o mix da sua loja.</p><a class="button white" href="#atendimento">Conhecer nosso time <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+        </div>
+        <div class="hero-products" id="hero-products"></div>
+      </article>
+      <article class="hero-scene" id="hero-centers" aria-labelledby="centers-hero-title" hidden>
+        <div class="hero-copy">
+          <p class="eyebrow">ESTRUTURA MM ATACADO</p>
+          <h2 id="centers-hero-title">Nossos centros<br><span>de distribuição.</span></h2>
+          <p class="hero-description">Conheça nossa operação em Ponta Grossa, Rio Brilhante, Feira de Santana e Campina Grande.</p>
+          <div class="hero-actions">
+            <button class="button red" type="button" data-open-dialog="catalog-centers-dialog" aria-haspopup="dialog">Conhecer nossos CDs <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
           </div>
-        </article>
+        </div>
+        <button class="hero-art centers-art" type="button" data-open-dialog="catalog-centers-dialog" aria-haspopup="dialog" aria-label="Ver mapa e detalhes dos centros de distribuição">
+          <img class="campaign-art" src="assets/catalogo-2026-cds.webp" width="1150" height="863" alt="Operação logística e mapa dos centros de distribuição MM Atacado em Ponta Grossa, PR, Rio Brilhante, MS, Feira de Santana, BA, e Campina Grande, PB" decoding="async">
+        </button>
+      </article>
       </div>
-      <div class="story-controls" aria-label="Navegar pelos destaques">
-        <button class="story-prev" type="button" aria-label="Destaque anterior" aria-controls="story-track"><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
-        <button class="story-next" type="button" aria-label="Próximo destaque" aria-controls="story-track"><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
-      </div>
-      <div class="story-timer" aria-hidden="true"><span></span></div>
-      <div class="story-progress" aria-label="Selecionar destaque">
-        <button class="story-pause" type="button" aria-label="Pausar slides" hidden>Ⅱ</button>
-        <button type="button" data-story="0" aria-label="Destaque 1 de 3" aria-current="true"></button>
-        <button type="button" data-story="1" aria-label="Destaque 2 de 3"></button>
-        <button type="button" data-story="2" aria-label="Destaque 3 de 3"></button>
+      <span class="hero-cursor" aria-hidden="true">Explorar <span>↗</span></span>
+      <div class="hero-controls">
+        <div class="hero-timer" aria-hidden="true"><span></span></div>
+        <div class="hero-options" role="group" aria-label="Escolher destaque">
+          <button type="button" data-hero-scene="hero-campaign" aria-pressed="true" aria-controls="hero-campaign">Black Fábrica</button>
+          <button type="button" data-hero-scene="hero-centers" aria-pressed="false" aria-controls="hero-centers">Nossos CDs</button>
+          <button type="button" data-hero-scene="hero-selection" aria-pressed="false" aria-controls="hero-selection">Seleção de produtos</button>
+        </div>
+        <button type="button" class="hero-motion-toggle" aria-pressed="false" hidden>Pausar animação</button>
       </div>
     </section>
 
@@ -173,10 +190,72 @@
           <div class="team-actions">
             <a class="button dark" href="#cadastro">Cadastrar minha empresa</a>
             <a class="button red" href="mailto:atacado@mmatacado.com.br"><svg><use href="#i-chat"/></svg> Falar com o time</a>
+            <a class="plain" href="#galeria">Ver galeria da equipe</a>
             <a class="plain phone" href="tel:08001420420">0800 142 0420 · opção 1</a>
           </div>
         </div>
         <figure><img src="assets/equipe.webp" alt="Colaboradores do MM Atacado juntos no escritório durante a Black Fábrica" loading="lazy" width="1460" height="973"><figcaption>Nosso time durante a Black Fábrica.</figcaption></figure>
+      </section>
+      <section id="galeria" class="internal-gallery" aria-labelledby="gallery-title">
+        <p class="eyebrow"><span></span> GENTE QUE FAZ O MM</p>
+        <h2 id="gallery-title">Equipe, eventos e bastidores</h2>
+        <div class="gallery-heading">
+          <h3>Black Fábrica 2026 · Primeiro dia</h3>
+          <div class="gallery-arrows" role="group" aria-label="Navegar pelas fotos">
+            <button type="button" class="icon-button" id="gallery-scroll-prev" aria-label="Fotos anteriores" aria-controls="gallery-track" aria-disabled="true"><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+            <button type="button" class="icon-button" id="gallery-scroll-next" aria-label="Próximas fotos" aria-controls="gallery-track"><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          </div>
+        </div>
+        <div class="gallery-grid" id="gallery-track" tabindex="0" role="group" aria-label="Fotos da equipe, eventos e bastidores">
+          <figure>
+            <a href="assets/galeria/black-fabrica-021.webp" aria-label="Ampliar foto. Colaboradores se cumprimentam na abertura">
+              <img src="assets/galeria/black-fabrica-021-mini.webp" alt="Colaboradores se cumprimentam na abertura" width="640" height="440" loading="lazy" decoding="async">
+            </a>
+            <figcaption>Colaboradores se cumprimentam na abertura</figcaption>
+          </figure>
+          <figure>
+            <a href="assets/galeria/black-fabrica-141.webp" aria-label="Ampliar foto. Equipe reunida no espaço da Black Fábrica">
+              <img src="assets/galeria/black-fabrica-141-mini.webp" alt="Equipe reunida no espaço da Black Fábrica" width="640" height="440" loading="lazy" decoding="async">
+            </a>
+            <figcaption>Equipe reunida no espaço da Black Fábrica</figcaption>
+          </figure>
+          <figure>
+            <a href="assets/galeria/black-fabrica-221.webp" aria-label="Ampliar foto. Encontro da equipe durante o evento">
+              <img src="assets/galeria/black-fabrica-221-mini.webp" alt="Encontro da equipe durante o evento" width="640" height="440" loading="lazy" decoding="async">
+            </a>
+            <figcaption>Encontro da equipe durante o evento</figcaption>
+          </figure>
+          <figure>
+            <a href="assets/galeria/black-fabrica-241.webp" aria-label="Ampliar foto. Colaboradora com headset na operação de atendimento">
+              <img src="assets/galeria/black-fabrica-241-mini.webp" alt="Colaboradora com headset na operação de atendimento" width="640" height="440" loading="lazy" decoding="async">
+            </a>
+            <figcaption>Colaboradora com headset na operação de atendimento</figcaption>
+          </figure>
+          <figure>
+            <a href="assets/galeria/black-fabrica-321.webp" aria-label="Ampliar foto. Equipe comemora durante a Black Fábrica">
+              <img src="assets/galeria/black-fabrica-321-mini.webp" alt="Equipe comemora durante a Black Fábrica" width="640" height="440" loading="lazy" decoding="async">
+            </a>
+            <figcaption>Equipe comemora durante a Black Fábrica</figcaption>
+          </figure>
+          <figure>
+            <a href="assets/galeria/black-fabrica-341.webp" aria-label="Ampliar foto. Visita ao espaço de exposição da Midea">
+              <img src="assets/galeria/black-fabrica-341-mini.webp" alt="Visita ao espaço de exposição da Midea" width="640" height="440" loading="lazy" decoding="async">
+            </a>
+            <figcaption>Visita ao espaço de exposição da Midea</figcaption>
+          </figure>
+          <figure>
+            <a href="assets/galeria/black-fabrica-501.webp" aria-label="Ampliar foto. Colaboradores reunidos nos bastidores">
+              <img src="assets/galeria/black-fabrica-501-mini.webp" alt="Colaboradores reunidos nos bastidores" width="640" height="440" loading="lazy" decoding="async">
+            </a>
+            <figcaption>Colaboradores reunidos nos bastidores</figcaption>
+          </figure>
+          <figure>
+            <a href="assets/galeria/black-fabrica-541.webp" aria-label="Ampliar foto. Equipe em um momento de celebração">
+              <img src="assets/galeria/black-fabrica-541-mini.webp" alt="Equipe em um momento de celebração" width="640" height="440" loading="lazy" decoding="async">
+            </a>
+            <figcaption>Equipe em um momento de celebração</figcaption>
+          </figure>
+        </div>
       </section>
     </div>
   </main>
@@ -202,6 +281,18 @@
   <a class="floating-contact" href="#atendimento" aria-label="Atendimento comercial">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 11.7a8.8 8.8 0 0 1-13.1 7.7L3 21l1.5-4.6a8.8 8.8 0 1 1 16.3-4.7Z"/><path d="M9 7.8c-.7-.5-1.6.4-1.5 1.4.3 2.8 3.5 6 6.3 6.3 1 .1 1.9-.8 1.4-1.5l-1.8-1c-.4-.2-.8.4-1.1.7-1.3-.5-2.4-1.6-2.9-2.9.3-.3.9-.7.7-1.1Z" fill="currentColor" stroke="none"/></svg>
   </a>
+  <dialog id="gallery-dialog" aria-label="Galeria de fotos">
+    <div class="gallery-toolbar">
+      <button type="button" class="button dark" id="gallery-prev">Anterior</button>
+      <button type="button" class="button dark" id="gallery-next">Próxima</button>
+      <form method="dialog"><button class="button dark" autofocus>Fechar</button></form>
+    </div>
+    <figure>
+      <img id="gallery-photo" alt="">
+      <figcaption id="gallery-caption" aria-live="polite"></figcaption>
+    </figure>
+  </dialog>
+
   <dialog id="dialog" aria-labelledby="dialog-title">
     <div class="dialog-shell">
       <form method="dialog"><button class="icon-button close" aria-label="Fechar"><svg><use href="#i-close"/></svg></button></form>

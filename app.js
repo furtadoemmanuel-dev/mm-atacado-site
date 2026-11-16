@@ -12,13 +12,21 @@ const photo = product => product.image.startsWith('uploads/') ? product.image : 
 const productLabel = product => product.brand + ' ' + product.name;
 const byId = id => catalog.find(product => product.id === id);
 
+const searchAliases = new Map([
+  ['geladeira', 'refrigerador'],
+  ['geladeiras', 'refrigerador'],
+  ['refrigeradores', 'refrigerador'],
+]);
+
 function searchCatalog(query, category) {
   const terms = [...new Set(tokenize(query).filter(term => !stopWords.has(term)))];
   const candidates = catalog.filter(product => category === 'Todos' || product.category === category);
   if (!terms.length) return query.trim() ? [] : candidates;
   return candidates.map(product => ({
     product,
-    score: terms.reduce((score, term) => score + Number(catalogTokens.get(product.id).has(term)), 0),
+    score: product.id === query.trim() ? terms.length + 1 : terms.reduce((score, term) => (
+      score + Number(catalogTokens.get(product.id).has(searchAliases.get(term) ?? term))
+    ), 0),
   })).filter(result => result.score > 0).sort((a, b) => b.score - a.score).map(result => result.product);
 }
 
@@ -32,6 +40,7 @@ function loadSelection() {
 }
 
 const selection = loadSelection();
+const quantities = new Map();
 let category = 'Todos';
 let query = '';
 const input = document.querySelector('#query');
@@ -97,6 +106,7 @@ function submitQuery(value) {
   query = value.trim();
   category = 'Todos';
   input.value = query;
+  document.querySelector('#header-query').value = query;
   renderCatalog();
   showResults();
 }
@@ -109,8 +119,8 @@ function resetQuery(clearCategory = false) {
   filters.querySelector('[aria-pressed="true"]')?.focus({ preventScroll: true });
 }
 
-function quoteLink(items) {
-  const list = items.map(product => '- ' + productLabel(product) + ' (cód. ' + product.id + ')').join('\n');
+function quoteLink(items, amounts = new Map()) {
+  const list = items.map(product => '- ' + productLabel(product) + ' (cód. ' + product.id + ') · Qtd.: ' + (amounts.get(product.id) ?? 1)).join('\n');
   const subject = encodeURIComponent('Consulta comercial | MM Atacado');
   const body = encodeURIComponent('Olá, equipe MM Atacado! Gostaria de consultar preços, estoque e condições para os itens abaixo.\n\n' + list + '\n\nObrigado!');
   return 'mailto:atacado@mmatacado.com.br?subject=' + subject + '&body=' + body;
@@ -127,9 +137,9 @@ function renderDialog() {
   }
   const items = [...selection].map(byId).filter(Boolean);
   dialogContent.innerHTML = '<h2 id="dialog-title">Minha seleção</h2>' + (items.length
-    ? '<p>Revise sua lista e abra um e-mail com os itens para o time comercial.</p><ul class="selection">' +
-      items.map(product => `<li><span><strong>${escapeHtml(productLabel(product))}</strong><br>Cód. ${escapeHtml(product.id)}</span><button type="button" class="plain" data-select="${escapeHtml(product.id)}" aria-label="Remover ${escapeHtml(productLabel(product))}">Remover</button></li>`).join('') +
-      '</ul><div class="dialog-actions"><a class="button red" href="' + quoteLink(items) + '">Consultar seleção ' + icon('arrow') + '</a></div>'
+    ? '<p>Informe as quantidades e abra a cotação no seu aplicativo de e-mail.</p><ul class="selection">' +
+      items.map(product => `<li><span><strong>${escapeHtml(productLabel(product))}</strong><br>Cód. ${escapeHtml(product.id)}</span><label class="quote-quantity">Qtd.<input type="number" min="1" step="1" required data-quantity="${escapeHtml(product.id)}" aria-label="Quantidade de ${escapeHtml(productLabel(product))}" value="${quantities.get(product.id) ?? 1}"></label><button type="button" class="plain" data-select="${escapeHtml(product.id)}" aria-label="Remover ${escapeHtml(productLabel(product))}">Remover</button></li>`).join('') +
+      '</ul><div class="dialog-actions"><a class="button red" data-quote href="' + quoteLink(items, quantities) + '">Solicitar cotação por e-mail ' + icon('arrow') + '</a></div>'
     : '<p>Adicione produtos à sua seleção usando o botão + na vitrine.</p>');
 }
 
@@ -144,6 +154,7 @@ function toggleSelection(id) {
   if (!product) return;
   const selected = !selection.delete(id);
   if (selected) selection.add(id);
+  else quantities.delete(id);
   try {
     localStorage.setItem('mm-atacado-selection', JSON.stringify([...selection]));
   } catch {
@@ -157,6 +168,11 @@ function toggleSelection(id) {
     (dialog.querySelector('[data-select]') ?? dialog.querySelector('.close')).focus();
   }
 }
+
+document.querySelector('#header-search').addEventListener('submit', event => {
+  event.preventDefault();
+  submitQuery(document.querySelector('#header-query').value);
+});
 
 document.querySelector('#search-form').addEventListener('submit', event => {
   event.preventDefault();
@@ -194,21 +210,31 @@ showcaseTrack.addEventListener('click', handleProductClick);
 reset.addEventListener('click', () => resetQuery());
 document.querySelector('#full-catalog').addEventListener('click', () => resetQuery(true));
 listButton.addEventListener('click', () => openDialog());
+dialog.addEventListener('input', event => {
+  const field = event.target.closest('[data-quantity]');
+  if (field?.validity.valid) quantities.set(field.dataset.quantity, field.valueAsNumber);
+});
+
 dialog.addEventListener('click', event => {
+  const quote = event.target.closest('[data-quote]');
+  if (quote) {
+    const invalid = dialog.querySelector('[data-quantity]:invalid');
+    if (invalid) {
+      event.preventDefault();
+      invalid.reportValidity();
+      return;
+    }
+    quote.href = quoteLink([...selection].map(byId).filter(Boolean), quantities);
+  }
   if (event.target === dialog) dialog.close();
   const button = event.target.closest('[data-select]');
   if (button) toggleSelection(button.dataset.select);
 });
 function focusSearch() {
-  document.querySelector('#busca').scrollIntoView({ block: 'start' });
-  input.focus({ preventScroll: true });
+  document.querySelector('#header-query').focus({ preventScroll: true });
 }
 
 document.querySelector('#mobile-search').addEventListener('click', focusSearch);
-document.querySelector('.header-search').addEventListener('click', event => {
-  event.preventDefault();
-  focusSearch();
-});
 
 const departmentMenu = document.querySelector('#department-menu');
 const menuContent = document.querySelector('#department-menu-content');
@@ -375,76 +401,6 @@ const sectionReveal = new IntersectionObserver(entries => {
 
 document.querySelectorAll('.product-showcase, .manifesto-inner, .team').forEach(section => sectionReveal.observe(section));
 
-const storyTrack = document.querySelector('#story-track');
-const storySlides = [...storyTrack.querySelectorAll('.story-slide')];
-const storyDots = [...document.querySelectorAll('[data-story]')];
-let currentStory = 0;
-storySlides[0].classList.add('story-active');
-
-function storyOffset(slide) {
-  return slide.offsetLeft - storySlides[0].offsetLeft;
-}
-
-function showStory(index) {
-  elapsedStoryTime = 0;
-  const target = (index + storySlides.length) % storySlides.length;
-  storyTrack.scrollTo({ left: storyOffset(storySlides[target]), behavior: motion.matches ? 'smooth' : 'instant' });
-}
-
-storyTrack.addEventListener('scroll', () => {
-  const index = storySlides.findLastIndex((slide, position) => storyTrack.scrollLeft >= (storyOffset(slide) + storyOffset(storySlides[Math.max(0, position - 1)])) / 2);
-  if (index < 0 || index === currentStory) return;
-  storySlides[currentStory].classList.remove('story-active');
-  currentStory = index;
-  storySlides[currentStory].classList.add('story-active');
-  elapsedStoryTime = 0;
-  storyDots.forEach((dot, position) => {
-    if (position === currentStory) dot.setAttribute('aria-current', 'true');
-    else dot.removeAttribute('aria-current');
-  });
-}, { passive: true });
-document.querySelector('.story-prev').addEventListener('click', () => showStory(currentStory - 1));
-document.querySelector('.story-next').addEventListener('click', () => showStory(currentStory + 1));
-storyDots.forEach((dot, index) => dot.addEventListener('click', () => showStory(index)));
-
-const heroCarousel = storyTrack.closest('.corporate-hero');
-const storyPause = heroCarousel.querySelector('.story-pause');
-let autoplayPaused = false;
-
-function updateAutoplayControl() {
-  storyPause.hidden = !motion.matches;
-  storyPause.textContent = autoplayPaused ? '▶' : 'Ⅱ';
-  storyPause.setAttribute('aria-label', autoplayPaused ? 'Retomar slides' : 'Pausar slides');
-}
-
-storyPause.addEventListener('click', () => {
-  autoplayPaused = !autoplayPaused;
-  updateAutoplayControl();
-});
-motion.addEventListener('change', updateAutoplayControl);
-updateAutoplayControl();
-
-const storyTimer = heroCarousel.querySelector('.story-timer span');
-const storyDuration = 7000;
-let elapsedStoryTime = 0;
-let lastFrame;
-
-function updateStoryTimer(now) {
-  const elapsed = lastFrame === undefined ? 0 : Math.min(now - lastFrame, 100);
-  lastFrame = now;
-  const bounds = heroCarousel.getBoundingClientRect();
-  const focused = heroCarousel.contains(document.activeElement) && document.activeElement !== storyPause;
-  const hovered = matchMedia('(hover: hover)').matches && heroCarousel.matches(':hover');
-  if (!autoplayPaused && motion.matches && !document.hidden && !focused && !hovered &&
-      bounds.bottom > 135 && bounds.top < window.innerHeight) {
-    elapsedStoryTime += elapsed;
-    if (elapsedStoryTime >= storyDuration) showStory(currentStory + 1);
-  }
-  storyTimer.style.transform = 'scaleX(' + elapsedStoryTime / storyDuration + ')';
-  requestAnimationFrame(updateStoryTimer);
-}
-requestAnimationFrame(updateStoryTimer);
-
 const leadForm = document.querySelector('#lead-form');
 const leadStatus = document.querySelector('#lead-status');
 
@@ -481,3 +437,207 @@ document.querySelectorAll('[data-open-dialog]').forEach(button => {
     if (event.target === panel) panel.close();
   });
 });
+
+const galleryDialog = document.querySelector('#gallery-dialog');
+const galleryLinks = [...document.querySelectorAll('.gallery-grid a')];
+const galleryPhoto = document.querySelector('#gallery-photo');
+const galleryCaption = document.querySelector('#gallery-caption');
+let galleryIndex = 0;
+
+function showGalleryPhoto(index) {
+  galleryIndex = (index + galleryLinks.length) % galleryLinks.length;
+  const link = galleryLinks[galleryIndex];
+  const description = link.querySelector('img').alt;
+  galleryPhoto.alt = description;
+  galleryPhoto.src = link.href;
+  galleryCaption.textContent = (galleryIndex + 1) + ' de ' + galleryLinks.length + ' · ' + description;
+}
+
+galleryLinks.forEach((link, index) => {
+  link.addEventListener('click', event => {
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    showGalleryPhoto(index);
+    galleryDialog.showModal();
+  });
+});
+
+document.querySelector('#gallery-prev').addEventListener('click', () => showGalleryPhoto(galleryIndex - 1));
+document.querySelector('#gallery-next').addEventListener('click', () => showGalleryPhoto(galleryIndex + 1));
+galleryDialog.addEventListener('keydown', event => {
+  if (event.key === 'ArrowLeft') showGalleryPhoto(galleryIndex - 1);
+  if (event.key === 'ArrowRight') showGalleryPhoto(galleryIndex + 1);
+});
+
+const campaignHero = document.querySelector('.campaign-hero');
+const heroMotionToggle = document.querySelector('.hero-motion-toggle');
+let heroMotionPaused = !motion.matches;
+
+function syncHeroMotion() {
+  campaignHero.classList.toggle('motion-paused', heroMotionPaused || !motion.matches);
+  heroMotionToggle.hidden = false;
+  heroMotionToggle.setAttribute('aria-pressed', String(heroMotionPaused));
+  heroMotionToggle.textContent = heroMotionPaused ? 'Retomar slides' : 'Pausar slides';
+}
+
+heroMotionToggle.addEventListener('click', () => {
+  heroMotionPaused = !heroMotionPaused;
+  syncHeroMotion();
+});
+motion.addEventListener('change', syncHeroMotion);
+syncHeroMotion();
+
+const heroSceneButtons = [...document.querySelectorAll('[data-hero-scene]')];
+const heroScenes = [...document.querySelectorAll('.hero-scene')];
+const heroSlideDuration = 4000;
+let heroSlideIndex = 0;
+let heroSlideElapsed = 0;
+let heroLastTick = performance.now();
+
+function selectHeroScene(index) {
+  heroSlideIndex = index;
+  const selectedId = heroSceneButtons[index].dataset.heroScene;
+  heroScenes.forEach(scene => { scene.hidden = scene.id !== selectedId; });
+  heroSceneButtons.forEach((button, position) => {
+    button.setAttribute('aria-pressed', String(position === index));
+  });
+  heroSlideElapsed = 0;
+  heroLastTick = performance.now();
+  campaignHero.style.setProperty('--hero-progress', '0');
+  resetHeroPointer();
+}
+
+heroSceneButtons.forEach((button, index) => {
+  button.addEventListener('click', () => selectHeroScene(index));
+});
+
+setInterval(() => {
+  const now = performance.now();
+  const elapsed = now - heroLastTick;
+  heroLastTick = now;
+  const focusedScene = document.activeElement?.closest('.hero-scene');
+  if (heroMotionPaused || document.hidden || focusedScene ||
+      campaignHero.classList.contains('motion-offscreen') || document.querySelector('dialog[open]')) return;
+  heroSlideElapsed += elapsed;
+  if (heroSlideElapsed >= heroSlideDuration) {
+    selectHeroScene((heroSlideIndex + 1) % heroSceneButtons.length);
+  }
+  campaignHero.style.setProperty('--hero-progress', String(heroSlideElapsed / heroSlideDuration));
+}, 50);
+
+const heroVisibility = new IntersectionObserver(([entry]) => {
+  heroLastTick = performance.now();
+  campaignHero.classList.toggle('motion-offscreen', !entry.isIntersecting);
+});
+heroVisibility.observe(campaignHero);
+document.addEventListener('visibilitychange', () => {
+  heroLastTick = performance.now();
+  campaignHero.classList.toggle('motion-background', document.hidden);
+});
+
+// Keep anchored sections clear of the responsive, sticky header.
+const headerSize = new ResizeObserver(([entry]) => {
+  document.documentElement.style.setProperty('--header-height', entry.target.offsetHeight + 'px');
+});
+headerSize.observe(document.querySelector('.header'));
+
+// Smooth pointer response runs only while a visible hero needs an update.
+const heroFinePointer = matchMedia('(hover: hover) and (pointer: fine)');
+let heroPointerFrame = 0;
+let heroPointerX = 0;
+let heroPointerY = 0;
+let heroTargetX = 0;
+let heroTargetY = 0;
+let heroCursorX = 0;
+let heroCursorY = 0;
+let heroCursorTargetX = 0;
+let heroCursorTargetY = 0;
+
+function heroPointerEnabled() {
+  return motion.matches && heroFinePointer.matches && !heroMotionPaused &&
+    !document.hidden && !campaignHero.classList.contains('motion-offscreen');
+}
+
+function animateHeroPointer() {
+  heroPointerFrame = 0;
+  if (!heroPointerEnabled()) {
+    resetHeroPointer();
+    return;
+  }
+  heroPointerX += (heroTargetX - heroPointerX) * .12;
+  heroPointerY += (heroTargetY - heroPointerY) * .12;
+  heroCursorX += (heroCursorTargetX - heroCursorX) * .22;
+  heroCursorY += (heroCursorTargetY - heroCursorY) * .22;
+  campaignHero.style.setProperty('--pointer-x', heroPointerX.toFixed(4));
+  campaignHero.style.setProperty('--pointer-y', heroPointerY.toFixed(4));
+  campaignHero.style.setProperty('--cursor-x', heroCursorX.toFixed(2) + 'px');
+  campaignHero.style.setProperty('--cursor-y', heroCursorY.toFixed(2) + 'px');
+  const remaining = Math.abs(heroTargetX - heroPointerX) + Math.abs(heroTargetY - heroPointerY) +
+    Math.abs(heroCursorTargetX - heroCursorX) + Math.abs(heroCursorTargetY - heroCursorY);
+  if (remaining > .02) heroPointerFrame = requestAnimationFrame(animateHeroPointer);
+}
+
+function resetHeroPointer() {
+  cancelAnimationFrame(heroPointerFrame);
+  heroPointerFrame = 0;
+  heroTargetX = heroPointerX = 0;
+  heroTargetY = heroPointerY = 0;
+  campaignHero.style.setProperty('--pointer-x', '0');
+  campaignHero.style.setProperty('--pointer-y', '0');
+  campaignHero.classList.remove('cursor-active');
+}
+
+campaignHero.addEventListener('pointermove', event => {
+  if (event.pointerType !== 'mouse' || !heroPointerEnabled()) return;
+  const bounds = campaignHero.getBoundingClientRect();
+  heroCursorTargetX = event.clientX - bounds.left;
+  heroCursorTargetY = event.clientY - bounds.top;
+  heroTargetX = Math.max(-1, Math.min(1, heroCursorTargetX / bounds.width * 2 - 1));
+  heroTargetY = Math.max(-1, Math.min(1, heroCursorTargetY / bounds.height * 2 - 1));
+  campaignHero.classList.toggle('cursor-active', Boolean(event.target.closest('.hero-art')));
+  if (!heroPointerFrame) heroPointerFrame = requestAnimationFrame(animateHeroPointer);
+});
+campaignHero.addEventListener('pointerenter', event => {
+  const bounds = campaignHero.getBoundingClientRect();
+  heroCursorX = event.clientX - bounds.left;
+  heroCursorY = event.clientY - bounds.top;
+});
+campaignHero.addEventListener('pointerleave', () => {
+  campaignHero.classList.remove('cursor-active');
+  heroTargetX = heroTargetY = 0;
+  if (!heroPointerFrame && heroPointerEnabled()) heroPointerFrame = requestAnimationFrame(animateHeroPointer);
+});
+campaignHero.addEventListener('focusin', resetHeroPointer);
+heroMotionToggle.addEventListener('click', resetHeroPointer);
+heroFinePointer.addEventListener('change', resetHeroPointer);
+motion.addEventListener('change', resetHeroPointer);
+document.addEventListener('visibilitychange', resetHeroPointer);
+
+const galleryTrack = document.querySelector('#gallery-track');
+const galleryScrollPrev = document.querySelector('#gallery-scroll-prev');
+const galleryScrollNext = document.querySelector('#gallery-scroll-next');
+
+function updateGalleryArrows() {
+  const remaining = galleryTrack.scrollWidth - galleryTrack.clientWidth - galleryTrack.scrollLeft;
+  galleryScrollPrev.setAttribute('aria-disabled', String(galleryTrack.scrollLeft <= 2));
+  galleryScrollNext.setAttribute('aria-disabled', String(remaining <= 2));
+}
+
+function scrollGallery(direction) {
+  const button = direction < 0 ? galleryScrollPrev : galleryScrollNext;
+  if (button.getAttribute('aria-disabled') === 'true') return;
+  const photos = galleryTrack.querySelectorAll('figure');
+  const step = photos[1].getBoundingClientRect().left - photos[0].getBoundingClientRect().left;
+  galleryTrack.scrollBy({ left: direction * step, behavior: motion.matches ? 'smooth' : 'instant' });
+}
+
+galleryScrollPrev.addEventListener('click', () => scrollGallery(-1));
+galleryScrollNext.addEventListener('click', () => scrollGallery(1));
+galleryTrack.addEventListener('scroll', updateGalleryArrows, { passive: true });
+galleryTrack.addEventListener('keydown', event => {
+  if (event.target !== galleryTrack || !['ArrowLeft', 'ArrowRight'].includes(event.key)) return;
+  event.preventDefault();
+  scrollGallery(event.key === 'ArrowLeft' ? -1 : 1);
+});
+new ResizeObserver(updateGalleryArrows).observe(galleryTrack);
+updateGalleryArrows();
