@@ -531,13 +531,13 @@ html { --header-height: 116px; }
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: #146b42;
+  background: #25d366;
   color: #fff;
   font-weight: 750;
   box-shadow: 0 4px 16px #18181833;
 }
 .floating-contact svg { width: 29px; height: 29px; }
-.floating-contact:hover { background: #105536; }
+.floating-contact:hover { background: #1da851; }
 @media (min-width: 930px) {
   .floating-contact { bottom: 20px; }
 }
