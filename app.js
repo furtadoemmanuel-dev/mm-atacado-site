@@ -410,6 +410,12 @@ const sectionReveal = new IntersectionObserver(entries => {
       [{ opacity: .55, transform: 'translateY(22px)' }, { opacity: 1, transform: 'none' }],
       { duration: 520, easing: 'cubic-bezier(.22,1,.36,1)' }
     );
+    if (motion.matches && entry.target.classList.contains('manifesto-inner')) {
+      entry.target.previousElementSibling.animate([{ opacity: 0 }, { opacity: .88 }], {
+        duration: 850,
+        easing: 'ease-out',
+      });
+    }
     sectionReveal.unobserve(entry.target);
   }
 }, { threshold: .17 });
@@ -690,3 +696,19 @@ heroFinePointer.addEventListener('change', scheduleHeroScroll);
 document.addEventListener('visibilitychange', scheduleHeroScroll);
 new ResizeObserver(scheduleHeroScroll).observe(campaignHero);
 scheduleHeroScroll();
+
+const brandStrip = document.querySelector('.brand-strip');
+const brandTrack = brandStrip.querySelector('.brand-strip-track');
+const brandPause = brandStrip.querySelector('.brand-strip-toggle');
+const brandList = document.querySelector('.catalog-brand-grid').cloneNode(true);
+brandList.className = 'brand-strip-list';
+const repeatedBrands = brandList.cloneNode(true);
+repeatedBrands.setAttribute('aria-hidden', 'true');
+brandTrack.append(brandList, repeatedBrands);
+brandStrip.hidden = false;
+
+brandPause.addEventListener('click', () => {
+  const paused = brandStrip.classList.toggle('brands-paused');
+  brandPause.textContent = paused ? '▶' : 'Ⅱ';
+  brandPause.setAttribute('aria-label', paused ? 'Retomar movimento das marcas' : 'Pausar movimento das marcas');
+});

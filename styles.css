@@ -356,8 +356,8 @@ dialog::backdrop{background:#181818aa}
   background: var(--ink);
 }
 .manifesto > img, .manifesto::before { position: absolute; inset: 0; width: 100%; height: 100%; }
-.manifesto > img { z-index: -2; object-fit: cover; object-position: center 61%; }
-.manifesto::before { content: ""; z-index: -1; background: linear-gradient(100deg, #181818cc, #181818ad 48%, #181818b8); }
+.manifesto > img { z-index: -2; object-fit: cover; object-position: center 57%; opacity: .88; }
+.manifesto::before { content: ""; z-index: -1; background: linear-gradient(180deg, #18181818 35%, #181818d9), linear-gradient(100deg, #18181855, #181818b8 48%, #181818d9); }
 .manifesto-inner { display: grid; gap: 15px 24px; align-items: start; }
 .manifesto .eyebrow { justify-self: start; padding: 5px 10px; border: 1px solid #ffffff9c; border-radius: 99px; }
 .manifesto h2 { font-size: clamp(3rem, 8vw, 7.2rem); }
@@ -1195,4 +1195,82 @@ html { --header-height: 116px; }
 }
 @media (prefers-reduced-motion: no-preference) {
   .menu-department-card { transition: background 180ms ease, border-color 180ms ease; }
+}
+
+.about-nav { color: var(--red-dark); font-weight: 800; }
+.about-details { display: grid; gap: 28px; padding-block: clamp(32px, 5vw, 72px); }
+.about-details p { max-width: 60ch; margin-top: 12px; }
+.about-details .button { margin-top: 18px; }
+@media (min-width: 830px) {
+  .about-details { grid-template-columns: 1.25fr 1fr; gap: 64px; }
+}
+@media (max-width: 420px) {
+  .department-bar-inner { gap: 8px; }
+  .department-bar-inner .about-nav { white-space: nowrap; }
+}
+
+.department-bar .about-nav { min-height: 44px; padding-inline: 0; white-space: nowrap; }
+#about-dialog .about-dialog-photo {
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-block: 18px;
+}
+#about-dialog .about-dialog-actions { position: static; height: auto; margin-top: 20px; }
+
+.brand-strip {
+  position: relative;
+  isolation: isolate;
+  background: #202020;
+  color: white;
+}
+.campaign-hero:has(+ .brand-strip:not([hidden])) { margin-bottom: 0; }
+.brand-strip-window { overflow-x: auto; scrollbar-width: none; }
+.brand-strip-track { display: flex; width: max-content; background: #202020; }
+.brand-strip-list { display: flex; flex: none; list-style: none; padding: 0; margin: 0; }
+.brand-strip-list li {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: clamp(140px, 14vw, 230px);
+  height: clamp(88px, 8vw, 125px);
+}
+.brand-strip-list li::before {
+  content: "";
+  width: 72%;
+  aspect-ratio: 208 / 96;
+  background: white url('assets/catalogo-2026-marcas.webp') var(--logo-x) var(--logo-y) / 400% 900% no-repeat;
+  filter: grayscale(1) invert(1) contrast(1.8);
+  mix-blend-mode: screen;
+  opacity: .82;
+}
+.brand-strip-list li::after {
+  content: "";
+  position: absolute;
+  right: -3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+}
+.brand-strip-toggle {
+  position: absolute;
+  right: 8px;
+  bottom: 6px;
+  min-width: 36px;
+  min-height: 36px;
+  border-radius: 50%;
+  border: 1px solid #fff5;
+  background: #202020;
+  color: white;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .brand-strip-window { overflow: hidden; }
+  .brand-strip-track { animation: brand-strip-scroll 75s linear infinite; }
+  .brand-strip:is(:hover, .brands-paused) .brand-strip-track { animation-play-state: paused; }
+  @keyframes brand-strip-scroll { to { transform: translateX(-50%); } }
+}
+@media (prefers-reduced-motion: reduce) {
+  .brand-strip-toggle, .brand-strip-list[aria-hidden="true"] { display: none; }
 }
