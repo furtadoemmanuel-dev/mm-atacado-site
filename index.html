@@ -7,7 +7,7 @@
   <meta name="description" content="Explore móveis, eletrodomésticos e tecnologia para revenda. Conheça o MM Atacado, do Grupo MM.">
   <title>MM Atacado | Móveis e eletros no atacado para lojistas</title>
   <link rel="icon" href="assets/mm-atacado.png">
-  <link rel="stylesheet" href="styles.css?v=25">
+  <link rel="stylesheet" href="styles.css?v=27">
   <script src="app.js?v=23" defer></script>
 </head>
 <body class="home corporate">
@@ -127,9 +127,8 @@
       <div class="container manifesto-inner">
         <p class="eyebrow">SOBRE NÓS</p>
         <h2 id="group-title">Experiência de varejo.<br><em>Parceria de atacado.</em></h2>
-        <div><p>O Grupo MM atua no varejo desde 1978. Em 2016, nasceu o MM Atacado para apoiar pequenos e médios varejistas.</p><a class="button white" href="https://grupomercadomoveis.com.br/">Conheça o Grupo MM <svg aria-hidden="true"><use href="#i-up"/></svg></a><button class="button white" data-open-dialog="engrenagem-dialog" type="button" aria-haspopup="dialog">Conheça nosso propósito</button>
-          <button class="button white" type="button" data-open-dialog="catalog-brands-dialog" aria-haspopup="dialog">Marcas do catálogo</button>
-          <button class="button white" type="button" data-open-dialog="catalog-centers-dialog" aria-haspopup="dialog">Centros de distribuição</button></div>
+        <div><p>O Grupo MM atua no varejo desde 1978. Em 2016, nasceu o MM Atacado para apoiar pequenos e médios varejistas.</p><div class="manifesto-actions"><a class="button white" href="https://grupomercadomoveis.com.br/">Conheça o Grupo MM <svg aria-hidden="true"><use href="#i-up"/></svg></a><button class="button white" data-open-dialog="engrenagem-dialog" type="button" aria-haspopup="dialog">Conheça nosso propósito</button>
+          <button class="button white" type="button" data-open-dialog="catalog-centers-dialog" aria-haspopup="dialog">Centros de distribuição</button></div></div>
       </div>
     </section>
 
@@ -281,15 +280,41 @@
   </main>
 
   <footer class="footer" id="rodape">
-    <div class="container footer-inner">
-      <a class="brand" href="#inicio"><img src="assets/mm-atacado.png" alt="MM Atacado" width="160" height="35"></a>
-      <p>Uma empresa do Grupo MM<br>R. Vítor Meireles, 288 · Ronda, Ponta Grossa – PR · CEP 84051-300</p>
-      <a href="#cadastro">Cadastrar minha empresa <svg aria-hidden="true"><use href="#i-up"/></svg></a>
-      <nav class="footer-inner" aria-label="Redes sociais">
+    <div class="container">
+      <div class="footer-columns">
+        <div class="footer-brand">
+          <a class="brand" href="#inicio"><img src="assets/mm-atacado.png" alt="MM Atacado" width="160" height="35"></a>
+          <p>Móveis, eletrodomésticos e tecnologia para revenda. Uma empresa do Grupo MM.</p>
+          <address>R. Vítor Meireles, 288 · Ronda<br>Ponta Grossa – PR · CEP 84051-300</address>
+        </div>
+        <nav aria-labelledby="footer-catalog">
+          <h2 id="footer-catalog">Catálogo</h2>
+          <a href="#departamentos">Departamentos</a>
+          <a href="#destaques">Produtos em destaque</a>
+          <a href="#catalogo">Catálogo completo</a>
+        </nav>
+        <nav aria-labelledby="footer-company">
+          <h2 id="footer-company">Institucional</h2>
+          <button type="button" data-open-dialog="about-dialog" aria-haspopup="dialog">Sobre nós</button>
+          <button type="button" data-open-dialog="catalog-centers-dialog" aria-haspopup="dialog">Centros de distribuição</button>
+          <a href="#galeria">Equipe e eventos</a>
+        </nav>
+        <div class="footer-contact">
+          <h2>Atendimento comercial</h2>
+          <a href="tel:08001420420">0800 142 0420 · opção 1</a>
+          <a href="mailto:atacado@mmatacado.com.br">atacado@mmatacado.com.br</a>
+          <a class="button red" href="#cadastro">Cadastrar minha empresa</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+      <nav class="footer-social" aria-label="Redes sociais">
         <a class="text-link" href="https://www.instagram.com/mmatacado.oficial/"><img src="assets/instagram.svg" width="24" height="24" alt="">Instagram</a>
         <a class="text-link" href="https://www.linkedin.com/company/mm-atacado/"><img src="assets/linkedin.svg" width="24" height="24" alt="">LinkedIn</a>
         <a class="text-link" href="https://www.facebook.com/grupomercadomoveis/"><img src="assets/facebook.svg" width="24" height="24" alt="">Facebook do Grupo MM</a>
       </nav>
+        <p>© MM Atacado</p>
+        <a class="footer-top" href="#inicio">Voltar ao topo <span aria-hidden="true">↑</span></a>
+      </div>
     </div>
   </footer>
   <nav class="mobile-nav" aria-label="Atalhos para celular">

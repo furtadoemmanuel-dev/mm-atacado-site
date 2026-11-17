@@ -1274,3 +1274,70 @@ html { --header-height: 116px; }
 @media (prefers-reduced-motion: reduce) {
   .brand-strip-toggle, .brand-strip-list[aria-hidden="true"] { display: none; }
 }
+
+.home .footer {
+  background: #080808;
+  color: #eee;
+  padding: clamp(44px, 6vw, 86px) 0 calc(78px + env(safe-area-inset-bottom));
+  font-size: .92rem;
+}
+.footer-columns { display: grid; gap: 34px; }
+.footer-columns > * { min-width: 0; }
+.footer-columns h2 {
+  margin-bottom: 12px;
+  color: #ff6872;
+  font: 800 1rem/1.3 Figtree, system-ui, sans-serif;
+  letter-spacing: normal;
+  text-transform: none;
+}
+.footer-brand p, .footer-brand address { max-width: 32ch; margin-top: 12px; color: #bdbdbd; }
+.footer-brand address { font-style: normal; }
+.footer-columns a:not(.brand, .button), .footer-columns nav button {
+  width: fit-content;
+  min-height: 35px;
+  overflow-wrap: anywhere;
+}
+.footer-columns nav button {
+  display: block;
+  padding: 0;
+  border: 0;
+  background: none;
+  text-align: left;
+  font-weight: 740;
+}
+.footer a:hover, .footer-columns nav button:hover { text-decoration: underline; text-underline-offset: 4px; }
+.footer .footer-contact .button { display: inline-flex; margin-top: 12px; }
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 40px;
+  padding-top: 22px;
+  border-top: 1px solid #ffffff30;
+  color: #bdbdbd;
+  font-size: .82rem;
+}
+.footer-social { display: flex; flex-wrap: wrap; gap: 14px; }
+.footer .footer-social a { min-height: 44px; }
+.footer-top span { font-size: 1.2rem; color: #ff6872; }
+@media (min-width: 540px) { .footer-columns { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1000px) {
+  .home .footer { padding-bottom: 28px; }
+  .footer-columns { grid-template-columns: 1.25fr .8fr .9fr 1.15fr; }
+}
+
+.manifesto-actions {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+  width: min(100%, 20rem);
+}
+.manifesto .manifesto-actions .button {
+  justify-content: flex-start;
+  margin: 0;
+  padding-inline: 18px;
+  text-align: left;
+}
+.manifesto-actions svg { margin-inline-start: auto; }
