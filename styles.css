@@ -1344,3 +1344,35 @@ html { --header-height: 116px; }
 
 /* Trim the thin white edge embedded in the distribution-center artwork. */
 #hero-centers .campaign-art { clip-path: inset(3px); }
+
+/* Registration closes the page after the gallery. */
+#cadastro.lead-section {
+  display: grid;
+  gap: 32px;
+  align-items: center;
+  margin-block: 0 64px;
+  padding: clamp(24px, 5vw, 64px);
+  border: 0;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #fff 55%, #f1e8e9);
+}
+.lead-intro > img { width: 180px; height: auto; margin-bottom: 32px; }
+.lead-intro h2 { font-size: clamp(2.8rem, 5vw, 5rem); line-height: .98; }
+.lead-intro h2 span { color: var(--red); }
+.lead-intro p { max-width: 34ch; margin-block: 22px; color: var(--muted); }
+#lead-form {
+  min-width: 0;
+  padding: clamp(22px, 3vw, 40px);
+  border-radius: 20px;
+  background: #202020;
+  color: white;
+  box-shadow: 0 18px 45px #0002;
+}
+#lead-form .lead-fields { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+#lead-form label { gap: 7px; font-size: .9rem; }
+#lead-form input { min-height: 50px; background: white; color: #181818; border: 1px solid #ccc; }
+#lead-form > button { width: 100%; min-height: 52px; margin-bottom: 10px; }
+#lead-form > p { font-size: .8rem; color: #d0d0d0; }
+@media (min-width: 850px) {
+  #cadastro.lead-section { grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 80px); }
+}

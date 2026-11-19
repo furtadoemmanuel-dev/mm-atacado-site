@@ -7,7 +7,7 @@
   <meta name="description" content="Explore móveis, eletrodomésticos e tecnologia para revenda. Conheça o MM Atacado, do Grupo MM.">
   <title>MM Atacado | Móveis e eletros no atacado para lojistas</title>
   <link rel="icon" href="assets/mm-atacado.png">
-  <link rel="stylesheet" href="styles.css?v=30">
+  <link rel="stylesheet" href="styles.css?v=31">
   <script src="app.js?v=23" defer></script>
 </head>
 <body class="home corporate">
@@ -184,22 +184,7 @@
         <p class="catalog-note">Vitrine demonstrativa com itens do catálogo MM. Consulte preços, estoque e condições com o time comercial.</p>
       </section>
 
-      <section id="cadastro" class="lead-section" aria-labelledby="lead-title">
-        <h2 id="lead-title">Cadastre sua empresa</h2>
-        <p>Deixe seus dados para conversar com a equipe comercial do MM Atacado.</p>
-        <form id="lead-form" action="/api/leads" method="post">
-          <div class="lead-fields">
-            <label>Nome <input name="name" autocomplete="name" maxlength="100" required></label>
-            <label>Empresa <input name="company" autocomplete="organization" maxlength="120" required></label>
-            <label>E-mail <input name="email" type="email" autocomplete="email" maxlength="160" required></label>
-            <label>Telefone ou WhatsApp <input name="phone" type="tel" autocomplete="tel" maxlength="24" required></label>
-            <label>Cidade <input name="city" autocomplete="address-level2" maxlength="80" required></label>
-            <label>UF <input name="state" autocomplete="address-level1" placeholder="PR" maxlength="2" pattern="[A-Za-z]{2}" required></label>
-          </div>
-          <button class="button red" type="submit" disabled>Enviar cadastro</button><p>O envio do formulário está desativado nesta prévia.</p>
-          <p id="lead-status" role="status"></p>
-        </form>
-      </section>
+
 
       <section id="atendimento" class="team" aria-labelledby="team-title">
         <div>
@@ -275,6 +260,26 @@
             <figcaption>Equipe em um momento de celebração</figcaption>
           </figure>
         </div>
+      </section>
+      <section id="cadastro" class="lead-section" aria-labelledby="lead-title">
+        <div class="lead-intro">
+          <img src="assets/mm-atacado.png" alt="MM Atacado" width="160" height="35" loading="lazy">
+          <h2 id="lead-title">Cadastre<br><span>sua empresa</span></h2>
+          <p>Deixe seus dados para conversar com a equipe comercial do MM Atacado.</p>
+          <a class="text-link" href="tel:08001420420">0800 142 0420 · opção 1</a>
+        </div>
+        <form id="lead-form" action="/api/leads" method="post">
+          <div class="lead-fields">
+            <label>Nome <input name="name" autocomplete="name" maxlength="100" required></label>
+            <label>Empresa <input name="company" autocomplete="organization" maxlength="120" required></label>
+            <label>E-mail <input name="email" type="email" autocomplete="email" maxlength="160" required></label>
+            <label>Telefone ou WhatsApp <input name="phone" type="tel" autocomplete="tel" maxlength="24" required></label>
+            <label>Cidade <input name="city" autocomplete="address-level2" maxlength="80" required></label>
+            <label>UF <input name="state" autocomplete="address-level1" placeholder="PR" maxlength="2" pattern="[A-Za-z]{2}" required></label>
+          </div>
+          <button class="button red" type="submit" disabled>Enviar cadastro</button><p>O envio do formulário está desativado nesta prévia.</p>
+          <p id="lead-status" role="status"></p>
+        </form>
       </section>
     </div>
   </main>
