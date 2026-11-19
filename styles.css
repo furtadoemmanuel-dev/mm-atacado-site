@@ -1376,3 +1376,99 @@ html { --header-height: 116px; }
 @media (min-width: 850px) {
   #cadastro.lead-section { grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 80px); }
 }
+
+.mm-timeline {
+  padding-block: clamp(3rem, 7vw, 6.5rem);
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.mm-timeline__layout {
+  display: grid;
+  gap: clamp(2rem, 6vw, 5rem);
+}
+
+.mm-timeline__intro .eyebrow {
+  color: var(--yellow);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.mm-timeline__intro h2 {
+  max-width: 12ch;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+}
+
+.mm-timeline__intro em {
+  color: #ff5968;
+  font-style: normal;
+}
+
+.mm-timeline__intro > p:last-child {
+  margin-top: 1rem;
+}
+
+.mm-timeline__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mm-timeline__list li {
+  position: relative;
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  column-gap: clamp(.75rem, 3vw, 2rem);
+  padding-inline-start: 1.5rem;
+}
+
+.mm-timeline__list li:not(:last-child) {
+  padding-block-end: 1.75rem;
+}
+
+.mm-timeline__list li:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  inset-block: .75rem -.75rem;
+  inset-inline-start: .34rem;
+  width: 1px;
+  background: var(--yellow);
+}
+
+.mm-timeline__list li::after {
+  content: "";
+  position: absolute;
+  inset-block-start: .4rem;
+  inset-inline-start: 0;
+  width: .75rem;
+  aspect-ratio: 1;
+  border: 1px solid var(--yellow);
+  border-radius: 50%;
+  background: var(--red);
+}
+
+.mm-timeline__list time {
+  color: #ff5968;
+  font-size: clamp(1.25rem, 3.4vw, 1.85rem);
+  font-weight: 860;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.mm-timeline__list h3 {
+  font-size: clamp(1.125rem, 2.2vw, 1.35rem);
+  line-height: 1.2;
+}
+
+.mm-timeline__list p {
+  max-width: 46ch;
+  margin-top: .3rem;
+  color: #dedbd7;
+}
+
+@media (min-width: 54rem) {
+  .mm-timeline__layout {
+    grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+    align-items: start;
+  }
+}
