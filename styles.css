@@ -1400,7 +1400,7 @@ html { --header-height: 116px; }
 }
 
 .mm-timeline__intro em {
-  color: #ff5968;
+  color: var(--red);
   font-style: normal;
 }
 
@@ -1448,7 +1448,7 @@ html { --header-height: 116px; }
 }
 
 .mm-timeline__list time {
-  color: #ff5968;
+  color: var(--red);
   font-size: clamp(1.25rem, 3.4vw, 1.85rem);
   font-weight: 860;
   font-variant-numeric: tabular-nums;
