@@ -70,5 +70,1682 @@
     "category": "Esporte e lazer",
     "image": "bike",
     "tags": "bicicletas bike bikes aro 26"
+  },
+  {
+    "id": "76522",
+    "brand": "Atlas",
+    "name": "FOGAO 4BCS MILAO MESA INOX",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/76522.jpg",
+    "tags": "Fogão Linha Branca FOGAO ATLAS 4BCS MILAO MESA INOX",
+    "type": "Fogão"
+  },
+  {
+    "id": "76515",
+    "brand": "Atlas",
+    "name": "FOGAO 4BCS MILAO PLUS MESA INOX",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/76515.jpg",
+    "tags": "Fogão Linha Branca FOGAO ATLAS 4BCS MILAO PLUS MESA INOX",
+    "type": "Fogão"
+  },
+  {
+    "id": "76389",
+    "brand": "Atlas",
+    "name": "FOGAO 4BCS MONACO TOP GLASS NEW",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/76389.jpg",
+    "tags": "Fogão Linha Branca FOGAO ATLAS 4BCS MONACO TOP GLASS NEW",
+    "type": "Fogão"
+  },
+  {
+    "id": "76514",
+    "brand": "Atlas",
+    "name": "FOGAO 5BCS MILAO PLUS MESA INOX",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/76514.jpg",
+    "tags": "Fogão Linha Branca FOGAO ATLAS 5BCS MILAO PLUS MESA INOX",
+    "type": "Fogão"
+  },
+  {
+    "id": "76390",
+    "brand": "Atlas",
+    "name": "FOGAO 5BCS MONACO TOP GLASS NEW",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/76390.jpg",
+    "tags": "Fogão Linha Branca FOGAO ATLAS 5BCS MONACO TOP GLASS NEW",
+    "type": "Fogão"
+  },
+  {
+    "id": "72073",
+    "brand": "Braslar",
+    "name": "FOGAO 4BCS NEW SIRIUS",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/72073.jpg",
+    "tags": "Fogão Linha Branca FOGAO BRASLAR 4BCS NEW SIRIUS",
+    "type": "Fogão"
+  },
+  {
+    "id": "76303",
+    "brand": "Itatiaia",
+    "name": "FOGAO 4BCS ITAGLASS PLUS",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/76303.jpg",
+    "tags": "Fogão Linha Branca FOGAO ITATIAIA 4BCS ITAGLASS PLUS",
+    "type": "Fogão"
+  },
+  {
+    "id": "76304",
+    "brand": "Itatiaia",
+    "name": "FOGAO 5BCS ITAGLASS PLUS TRI CHAMA",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/76304.jpg",
+    "tags": "Fogão Linha Branca FOGAO ITATIAIA 5BCS ITAGLASS PLUS TRI CHAMA",
+    "type": "Fogão"
+  },
+  {
+    "id": "74932",
+    "brand": "Mueller",
+    "name": "FOGAO 4BCS MESA INOX MFI4BB",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/74932.jpg",
+    "tags": "Fogão Linha Branca FOGAO MUELLER 4BCS MESA INOX MFI4BB",
+    "type": "Fogão"
+  },
+  {
+    "id": "72765",
+    "brand": "Mueller",
+    "name": "FOGAO 4BCS MFV4BF",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/72765.jpg",
+    "tags": "Fogão Linha Branca FOGAO MUELLER 4BCS MFV4BF",
+    "type": "Fogão"
+  },
+  {
+    "id": "68782",
+    "brand": "Mueller",
+    "name": "FOGAO 5BCS DECORATO VETRO",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/68782.jpg",
+    "tags": "Fogão Linha Branca FOGAO MUELLER 5BCS DECORATO VETRO",
+    "type": "Fogão"
+  },
+  {
+    "id": "74933",
+    "brand": "Mueller",
+    "name": "FOGAO 5BCS MESA INOX MFI5BB",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/74933.jpg",
+    "tags": "Fogão Linha Branca FOGAO MUELLER 5BCS MESA INOX MFI5BB",
+    "type": "Fogão"
+  },
+  {
+    "id": "72766",
+    "brand": "Mueller",
+    "name": "FOGAO 5BCS MFV5BF",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/72766.jpg",
+    "tags": "Fogão Linha Branca FOGAO MUELLER 5BCS MFV5BF",
+    "type": "Fogão"
+  },
+  {
+    "id": "64572",
+    "brand": "Mueller",
+    "name": "COOKTOP TRIPLA CHAMA 5BCS G5 WK26",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/64572.jpg",
+    "tags": "Cooktop Linha Branca COOKTOP MUELLER TRIPLA CHAMA 5BCS G5 WK26",
+    "type": "Cooktop"
+  },
+  {
+    "id": "77324",
+    "brand": "Britânia",
+    "name": "FORNO ELETRICO BFE42A 42L",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/77324.jpg",
+    "tags": "Forno Linha Branca FORNO ELETRICO BRITANIA BFE42A 42L",
+    "type": "Forno"
+  },
+  {
+    "id": "76215",
+    "brand": "Mondial",
+    "name": "FORNO ELETRICO 42L FRN-42",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/76215.jpg",
+    "tags": "Forno Linha Branca FORNO ELETRICO MONDIAL 42L FRN-42",
+    "type": "Forno"
+  },
+  {
+    "id": "74281",
+    "brand": "Philco",
+    "name": "FORNO ELETRICO 65L PFE65",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/74281.jpg",
+    "tags": "Forno Linha Branca FORNO ELETRICO PHILCO 65L PFE65",
+    "type": "Forno"
+  },
+  {
+    "id": "76919",
+    "brand": "Electrolux",
+    "name": "MICRO-ONDAS ME34S 34L",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/76919.jpg",
+    "tags": "Micro-ondas Linha Branca MICRO-ONDAS ELECTROLUX ME34S 34L",
+    "type": "Micro-ondas"
+  },
+  {
+    "id": "76921",
+    "brand": "Philco",
+    "name": "MICRO-ONDAS PMO39B 33L",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/76921.jpg",
+    "tags": "Micro-ondas Linha Branca MICRO-ONDAS PHILCO PMO39B 33L",
+    "type": "Micro-ondas"
+  },
+  {
+    "id": "77195",
+    "brand": "Brastemp",
+    "name": "REFRIGERADOR BRO88AK SMART 3PT 630L",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/77195.jpg",
+    "tags": "Refrigerador Linha Branca REFRIGERADOR BRASTEMP BRO88AK SMART 3PT 630L",
+    "type": "Refrigerador"
+  },
+  {
+    "id": "76375",
+    "brand": "Electrolux",
+    "name": "REFRIGERADOR F.FREE INVER IF41 380L (BRANCO)",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/76375.jpg",
+    "tags": "Refrigerador Linha Branca REFRIGERADOR ELECTROLUX F.FREE INVER IF41 380L (BRANCO)",
+    "type": "Refrigerador"
+  },
+  {
+    "id": "76374",
+    "brand": "Electrolux",
+    "name": "REFRIGERADOR F.FREE INVER IF41S 380L (INOX)",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/76374.jpg",
+    "tags": "Refrigerador Linha Branca REFRIGERADOR ELECTROLUX F.FREE INVER IF41S 380L (INOX)",
+    "type": "Refrigerador"
+  },
+  {
+    "id": "76481",
+    "brand": "Midea",
+    "name": "REFRIGERADOR CYCLE DEFROST DUPLEX RT554 410L",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/76481.jpg",
+    "tags": "Refrigerador Linha Branca REFRIGERADOR MIDEA CYCLE DEFROST DUPLEX RT554 410L",
+    "type": "Refrigerador"
+  },
+  {
+    "id": "76665",
+    "brand": "Midea",
+    "name": "REFRIGERADOR F.FREE DUPLEX INVER MD-RT6110 473L",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/76665.jpg",
+    "tags": "Refrigerador Linha Branca REFRIGERADOR MIDEA F.FREE DUPLEX INVER MD-RT6110 473L",
+    "type": "Refrigerador"
+  },
+  {
+    "id": "76666",
+    "brand": "Midea",
+    "name": "REFRIGERADOR F.FREE DUPLEX INVER MD-RT6114 473L",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/76666.jpg",
+    "tags": "Refrigerador Linha Branca REFRIGERADOR MIDEA F.FREE DUPLEX INVER MD-RT6114 473L",
+    "type": "Refrigerador"
+  },
+  {
+    "id": "75480",
+    "brand": "Midea",
+    "name": "REFRIGERADOR F.FREE DUPLEX MD-RT533 INVER 394L",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/75480.jpg",
+    "tags": "Refrigerador Linha Branca REFRIGERADOR MIDEA F.FREE DUPLEX MD-RT533 INVER 394L",
+    "type": "Refrigerador"
+  },
+  {
+    "id": "75481",
+    "brand": "Midea",
+    "name": "REFRIGERADOR F.FREE DUPLEX MD-RT533 INVER 394L",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/75481.jpg",
+    "tags": "Refrigerador Linha Branca REFRIGERADOR MIDEA F.FREE DUPLEX MD-RT533 INVER 394L",
+    "type": "Refrigerador"
+  },
+  {
+    "id": "75482",
+    "brand": "Midea",
+    "name": "REFRIGERADOR F.FREE DUPLEX MD-RT572 INVER BIV 425L",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/75482.jpg",
+    "tags": "Refrigerador Linha Branca REFRIGERADOR MIDEA F.FREE DUPLEX MD-RT572 INVER BIV 425L",
+    "type": "Refrigerador"
+  },
+  {
+    "id": "75483",
+    "brand": "Midea",
+    "name": "REFRIGERADOR F.FREE DUPLEX MD-RT572 INVER BIV 425L",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/75483.jpg",
+    "tags": "Refrigerador Linha Branca REFRIGERADOR MIDEA F.FREE DUPLEX MD-RT572 INVER BIV 425L",
+    "type": "Refrigerador"
+  },
+  {
+    "id": "76918",
+    "brand": "Electrolux",
+    "name": "FREEZER HORIZ HI330T INVER 315L",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/76918.jpg",
+    "tags": "Freezer Linha Branca FREEZER ELECTROLUX HORIZ HI330T INVER 315L",
+    "type": "Freezer"
+  },
+  {
+    "id": "73002",
+    "brand": "Esmaltec",
+    "name": "CONSERVADOR HORIZ ECH250 214L",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/73002.jpg",
+    "tags": "Freezer Linha Branca CONSERVADOR ESMALTEC HORIZ ECH250 214L",
+    "type": "Freezer"
+  },
+  {
+    "id": "73003",
+    "brand": "Esmaltec",
+    "name": "CONSERVADOR HORIZ ECH350 325L",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/73003.jpg",
+    "tags": "Freezer Linha Branca CONSERVADOR ESMALTEC HORIZ ECH350 325L",
+    "type": "Freezer"
+  },
+  {
+    "id": "75335",
+    "brand": "Midea",
+    "name": "FREEZER HORIZ INVER MDRC151 100L",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/75335.jpg",
+    "tags": "Freezer Linha Branca FREEZER MIDEA HORIZ INVER MDRC151 100L",
+    "type": "Freezer"
+  },
+  {
+    "id": "76300",
+    "brand": "Midea",
+    "name": "FREEZER HORIZ INVER MDRC280 198L BIV",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/76300.jpg",
+    "tags": "Freezer Linha Branca FREEZER MIDEA HORIZ INVER MDRC280 198L BIV",
+    "type": "Freezer"
+  },
+  {
+    "id": "76301",
+    "brand": "Midea",
+    "name": "FREEZER HORIZ INVER MDRC411 293L BIV",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/76301.jpg",
+    "tags": "Freezer Linha Branca FREEZER MIDEA HORIZ INVER MDRC411 293L BIV",
+    "type": "Freezer"
+  },
+  {
+    "id": "76302",
+    "brand": "Midea",
+    "name": "FREEZER HORIZ INVER MDRC698 508L BIV",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/76302.jpg",
+    "tags": "Freezer Linha Branca FREEZER MIDEA HORIZ INVER MDRC698 508L BIV",
+    "type": "Freezer"
+  },
+  {
+    "id": "76763",
+    "brand": "Midea",
+    "name": "FREEZER VERT INVER MDRU276 196L BIV",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/76763.jpg",
+    "tags": "Freezer Linha Branca FREEZER MIDEA VERT INVER MDRU276 196L BIV",
+    "type": "Freezer"
+  },
+  {
+    "id": "75817",
+    "brand": "Midea",
+    "name": "FRIGOBAR INVER 45L MDRD086 BIV",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/75817.jpg",
+    "tags": "Frigobar Linha Branca FRIGOBAR MIDEA INVER 45L MDRD086 BIV",
+    "type": "Frigobar"
+  },
+  {
+    "id": "75816",
+    "brand": "Midea",
+    "name": "FRIGOBAR INVER 67L MDRD108 BIV",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/75816.jpg",
+    "tags": "Frigobar Linha Branca FRIGOBAR MIDEA INVER 67L MDRD108 BIV",
+    "type": "Frigobar"
+  },
+  {
+    "id": "75815",
+    "brand": "Midea",
+    "name": "FRIGOBAR INVER 93L MDRD142 BIV",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/75815.jpg",
+    "tags": "Frigobar Linha Branca FRIGOBAR MIDEA INVER 93L MDRD142 BIV",
+    "type": "Frigobar"
+  },
+  {
+    "id": "73234",
+    "brand": "Britânia",
+    "name": "LAVADORA BLR03 10KG",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/73234.jpg",
+    "tags": "Lavadora Linha Branca LAVADORA BRITANIA BLR03 10KG",
+    "type": "Lavadora"
+  },
+  {
+    "id": "73235",
+    "brand": "Britânia",
+    "name": "LAVADORA BLR04 20,6KG",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/73235.jpg",
+    "tags": "Lavadora Linha Branca LAVADORA BRITANIA BLR04 20,6KG",
+    "type": "Lavadora"
+  },
+  {
+    "id": "64652",
+    "brand": "Colormaq",
+    "name": "LAVADORA LCS10 10KG",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/64652.jpg",
+    "tags": "Lavadora Linha Branca LAVADORA COLORMAQ LCS10 10KG",
+    "type": "Lavadora"
+  },
+  {
+    "id": "66385",
+    "brand": "Colormaq",
+    "name": "LAVADORA LCS20 20KG",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/66385.jpg",
+    "tags": "Lavadora Linha Branca LAVADORA COLORMAQ LCS20 20KG",
+    "type": "Lavadora"
+  },
+  {
+    "id": "76492",
+    "brand": "Consul",
+    "name": "LAVADORA CWN14 14KG",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/76492.jpg",
+    "tags": "Lavadora Linha Branca LAVADORA CONSUL CWN14 14KG",
+    "type": "Lavadora"
+  },
+  {
+    "id": "76914",
+    "brand": "Electrolux",
+    "name": "LAVADORA LET12 12KG",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/76914.jpg",
+    "tags": "Lavadora Linha Branca LAVADORA ELECTROLUX LET12 12KG",
+    "type": "Lavadora"
+  },
+  {
+    "id": "68784",
+    "brand": "Mueller",
+    "name": "LAVADORA BIG 20KG",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/68784.jpg",
+    "tags": "Lavadora Linha Branca LAVADORA MUELLER BIG 20KG",
+    "type": "Lavadora"
+  },
+  {
+    "id": "51914",
+    "brand": "Mueller",
+    "name": "LAVADORA PLUS 4.5KG",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/51914.jpg",
+    "tags": "Lavadora Linha Branca LAVADORA MUELLER PLUS 4.5KG",
+    "type": "Lavadora"
+  },
+  {
+    "id": "55993",
+    "brand": "Mueller",
+    "name": "LAVADORA PLUS 4.5KG",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/55993.jpg",
+    "tags": "Lavadora Linha Branca LAVADORA MUELLER PLUS 4.5KG",
+    "type": "Lavadora"
+  },
+  {
+    "id": "73062",
+    "brand": "Wanke",
+    "name": "LAVADORA NEW CONFORT LWBE100T3 10KG",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/73062.jpg",
+    "tags": "Lavadora Linha Branca LAVADORA WANKE NEW CONFORT LWBE100T3 10KG",
+    "type": "Lavadora"
+  },
+  {
+    "id": "73061",
+    "brand": "Wanke",
+    "name": "LAVADORA NEW PREMIUM LWBE201T3 20KG",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/73061.jpg",
+    "tags": "Lavadora Linha Branca LAVADORA WANKE NEW PREMIUM LWBE201T3 20KG",
+    "type": "Lavadora"
+  },
+  {
+    "id": "68330",
+    "brand": "Wanke",
+    "name": "LAVADORA SUPER 4KG",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/68330.jpg",
+    "tags": "Lavadora Linha Branca LAVADORA WANKE SUPER 4KG",
+    "type": "Lavadora"
+  },
+  {
+    "id": "74359",
+    "brand": "Midea",
+    "name": "LAVA E SECA 11KG MF201D110WB/WK",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/74359.jpg",
+    "tags": "Lava e seca Linha Branca LAVA E SECA MIDEA 11KG MF201D110WB/WK",
+    "type": "Lava e seca"
+  },
+  {
+    "id": "74731",
+    "brand": "Britânia",
+    "name": "CENTRIFUGA BCE15 15KG",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/74731.jpg",
+    "tags": "Centrífuga Linha Branca CENTRIFUGA BRITANIA BCE15 15KG",
+    "type": "Centrífuga"
+  },
+  {
+    "id": "66756",
+    "brand": "Mueller",
+    "name": "CENTRIFUGA FIT 12,6KG",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/66756.jpg",
+    "tags": "Centrífuga Linha Branca CENTRIFUGA MUELLER FIT 12,6KG",
+    "type": "Centrífuga"
+  },
+  {
+    "id": "75453",
+    "brand": "Wanke",
+    "name": "CENTRIFUGA PREMIUM PLUS C/TIMER 15KG",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/75453.jpg",
+    "tags": "Centrífuga Linha Branca CENTRIFUGA WANKE PREMIUM PLUS C/TIMER 15KG",
+    "type": "Centrífuga"
+  },
+  {
+    "id": "76509",
+    "brand": "Wanke",
+    "name": "SECADORA COMFORT PCTE 8KG",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/76509.jpg",
+    "tags": "Secadora Linha Branca SECADORA WANKE COMFORT PCTE 8KG",
+    "type": "Secadora"
+  },
+  {
+    "id": "74402",
+    "brand": "Wanke",
+    "name": "SECADORA COMFORT PISO 12KG",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/74402.jpg",
+    "tags": "Secadora Linha Branca SECADORA WANKE COMFORT PISO 12KG",
+    "type": "Secadora"
+  },
+  {
+    "id": "74962",
+    "brand": "Midea",
+    "name": "SPLIT AI ECOMASTER 12000 INVERTER Q/F 38EZVQA12M5",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/74962.jpg",
+    "tags": "Ar-condicionado Linha Branca SPLIT MIDEA AI ECOMASTER 12000 INVERTER Q/F 38EZVQA12M5",
+    "type": "Ar-condicionado"
+  },
+  {
+    "id": "76762",
+    "brand": "Midea",
+    "name": "SPLIT LITE 12000 INVERTER FRIO 38TBVCB12M5",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/76762.jpg",
+    "tags": "Ar-condicionado Linha Branca SPLIT MIDEA LITE 12000 INVERTER FRIO 38TBVCB12M5",
+    "type": "Ar-condicionado"
+  },
+  {
+    "id": "76761",
+    "brand": "Midea",
+    "name": "SPLIT LITE 9000 INVERTER FRIO 38TBVCB09M5",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/76761.jpg",
+    "tags": "Ar-condicionado Linha Branca SPLIT MIDEA LITE 9000 INVERTER FRIO 38TBVCB09M5",
+    "type": "Ar-condicionado"
+  },
+  {
+    "id": "76757",
+    "brand": "Philco",
+    "name": "SPLIT PAC12000 INVERTER FRIO PAC12FTW WIFI",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/76757.jpg",
+    "tags": "Ar-condicionado Linha Branca SPLIT PHILCO PAC12000 INVERTER FRIO PAC12FTW WIFI",
+    "type": "Ar-condicionado"
+  },
+  {
+    "id": "75401",
+    "brand": "Philco",
+    "name": "SPLIT PAC12000BTUS INVERTER Q/F PAC12QC",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/75401.jpg",
+    "tags": "Ar-condicionado Linha Branca SPLIT PHILCO PAC12000BTUS INVERTER Q/F PAC12QC",
+    "type": "Ar-condicionado"
+  },
+  {
+    "id": "76758",
+    "brand": "Philco",
+    "name": "SPLIT PAC18000 INVERTER FRIO PAC18FTW WIFI",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/76758.jpg",
+    "tags": "Ar-condicionado Linha Branca SPLIT PHILCO PAC18000 INVERTER FRIO PAC18FTW WIFI",
+    "type": "Ar-condicionado"
+  },
+  {
+    "id": "76756",
+    "brand": "Philco",
+    "name": "SPLIT PAC9000 INVERTER FRIO PAC9FTW WIFI",
+    "model": "",
+    "category": "Eletrodomésticos",
+    "image": "produtos/76756.jpg",
+    "tags": "Ar-condicionado Linha Branca SPLIT PHILCO PAC9000 INVERTER FRIO PAC9FTW WIFI",
+    "type": "Ar-condicionado"
+  },
+  {
+    "id": "74939",
+    "brand": "AOC",
+    "name": "TV 32\" SMART ROKU HD 32S5155/78G",
+    "model": "",
+    "category": "TV e áudio",
+    "image": "produtos/74939.jpg",
+    "tags": "TV Linha Marrom TV 32\" AOC SMART ROKU HD 32S5155/78G",
+    "type": "TV"
+  },
+  {
+    "id": "77084",
+    "brand": "AOC",
+    "name": "TV 40\" SMART ROKU DLED FHD 40S5166/78G",
+    "model": "",
+    "category": "TV e áudio",
+    "image": "produtos/77084.jpg",
+    "tags": "TV Linha Marrom TV 40\" AOC SMART ROKU DLED FHD 40S5166/78G",
+    "type": "TV"
+  },
+  {
+    "id": "77085",
+    "brand": "AOC",
+    "name": "TV 43\" SMART ROKU DLED FHD 43S5155/78G",
+    "model": "",
+    "category": "TV e áudio",
+    "image": "produtos/77085.jpg",
+    "tags": "TV Linha Marrom TV 43\" AOC SMART ROKU DLED FHD 43S5155/78G",
+    "type": "TV"
+  },
+  {
+    "id": "76330",
+    "brand": "AOC",
+    "name": "TV 50\" SMART ROKU UHD 4K 50U6125/78G",
+    "model": "",
+    "category": "TV e áudio",
+    "image": "produtos/76330.jpg",
+    "tags": "TV Linha Marrom TV 50\" AOC SMART ROKU UHD 4K 50U6125/78G",
+    "type": "TV"
+  },
+  {
+    "id": "76298",
+    "brand": "Philco",
+    "name": "TV 32\" SMART LED ROKU DOLBY AUDIO P32CRB",
+    "model": "",
+    "category": "TV e áudio",
+    "image": "produtos/76298.jpg",
+    "tags": "TV Linha Marrom TV 32\" PHILCO SMART LED ROKU DOLBY AUDIO P32CRB",
+    "type": "TV"
+  },
+  {
+    "id": "76564",
+    "brand": "Philips",
+    "name": "TV 50\" SMART 4K 50PUG7300/78",
+    "model": "",
+    "category": "TV e áudio",
+    "image": "produtos/76564.jpg",
+    "tags": "TV Linha Marrom TV 50\" PHILIPS SMART 4K 50PUG7300/78",
+    "type": "TV"
+  },
+  {
+    "id": "75963",
+    "brand": "Philips",
+    "name": "TV 55\" SMART 4K 55PUG7300/78",
+    "model": "",
+    "category": "TV e áudio",
+    "image": "produtos/75963.jpg",
+    "tags": "TV Linha Marrom TV 55\" PHILIPS SMART 4K 55PUG7300/78",
+    "type": "TV"
+  },
+  {
+    "id": "77086",
+    "brand": "Philips",
+    "name": "TV 65\" SMART 4K 65PUG8100/78 AMBILIGHT",
+    "model": "",
+    "category": "TV e áudio",
+    "image": "produtos/77086.jpg",
+    "tags": "TV Linha Marrom TV 65\" PHILIPS SMART 4K 65PUG8100/78 AMBILIGHT",
+    "type": "TV"
+  },
+  {
+    "id": "74380",
+    "brand": "Samsung",
+    "name": "TV 32\" SMART HD HDR UN32H5000FGXZD",
+    "model": "",
+    "category": "TV e áudio",
+    "image": "produtos/74380.jpg",
+    "tags": "TV Linha Marrom TV 32\" SAMSUNG SMART HD HDR UN32H5000FGXZD",
+    "type": "TV"
+  },
+  {
+    "id": "76735",
+    "brand": "Samsung",
+    "name": "TV 50\" SMART 4K MINILED GAMING UN50M75HAGXZD",
+    "model": "",
+    "category": "TV e áudio",
+    "image": "produtos/76735.jpg",
+    "tags": "TV Linha Marrom TV 50\" SAMSUNG SMART 4K MINILED GAMING UN50M75HAGXZD",
+    "type": "TV"
+  },
+  {
+    "id": "76736",
+    "brand": "Samsung",
+    "name": "TV 55\" SMART 4K MINILED GAMING UN55M75HAGXZD",
+    "model": "",
+    "category": "TV e áudio",
+    "image": "produtos/76736.jpg",
+    "tags": "TV Linha Marrom TV 55\" SAMSUNG SMART 4K MINILED GAMING UN55M75HAGXZD",
+    "type": "TV"
+  },
+  {
+    "id": "76737",
+    "brand": "Samsung",
+    "name": "TV 65\" SMART 4K MINILED GAMING UN65M75HAGXZD",
+    "model": "",
+    "category": "TV e áudio",
+    "image": "produtos/76737.jpg",
+    "tags": "TV Linha Marrom TV 65\" SAMSUNG SMART 4K MINILED GAMING UN65M75HAGXZD",
+    "type": "TV"
+  },
+  {
+    "id": "76738",
+    "brand": "Samsung",
+    "name": "TV 75\" SMART MINILED 4K UN75M75HAGXZD GAMING",
+    "model": "",
+    "category": "TV e áudio",
+    "image": "produtos/76738.jpg",
+    "tags": "TV Linha Marrom TV 75\" SAMSUNG SMART MINILED 4K UN75M75HAGXZD GAMING",
+    "type": "TV"
+  },
+  {
+    "id": "76739",
+    "brand": "Samsung",
+    "name": "TV 85\" SMART MINILED 4K UN85M75HAGXZD GAMING",
+    "model": "",
+    "category": "TV e áudio",
+    "image": "produtos/76739.jpg",
+    "tags": "TV Linha Marrom TV 85\" SAMSUNG SMART MINILED 4K UN85M75HAGXZD GAMING",
+    "type": "TV"
+  },
+  {
+    "id": "73352",
+    "brand": "Philco",
+    "name": "CAIXA DE SOM BLUETOOTH 3500W PCX35000",
+    "model": "",
+    "category": "TV e áudio",
+    "image": "produtos/73352.jpg",
+    "tags": "Caixa de som Linha Marrom CAIXA DE SOM PHILCO BLUETOOTH 3500W PCX35000",
+    "type": "Caixa de som"
+  },
+  {
+    "id": "76331",
+    "brand": "Philips",
+    "name": "CAIXA DE SOM PARTY SPEAKER BLUETOOTH 1500W TAX4000",
+    "model": "",
+    "category": "TV e áudio",
+    "image": "produtos/76331.jpg",
+    "tags": "Caixa de som Linha Marrom CAIXA DE SOM PHILIPS PARTY SPEAKER BLUETOOTH 1500W TAX4000",
+    "type": "Caixa de som"
+  },
+  {
+    "id": "74267",
+    "brand": "Philco",
+    "name": "ASPIRADOR PO PAS80",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/74267.jpg",
+    "tags": "Aspirador Portáteis ASPIRADOR PO PHILCO PAS80",
+    "type": "Aspirador"
+  },
+  {
+    "id": "68414",
+    "brand": "WAP",
+    "name": "ASPIRADOR PO AGUA GTW15",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/68414.jpg",
+    "tags": "Aspirador Portáteis ASPIRADOR PO AGUA WAP GTW15",
+    "type": "Aspirador"
+  },
+  {
+    "id": "65456",
+    "brand": "Mondial",
+    "name": "BATEDEIRA B-44",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/65456.jpg",
+    "tags": "Batedeira Portáteis BATEDEIRA MONDIAL B-44",
+    "type": "Batedeira"
+  },
+  {
+    "id": "65730",
+    "brand": "Mondial",
+    "name": "BATEDEIRA PLANETARIA BP-03-B",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/65730.jpg",
+    "tags": "Batedeira Portáteis BATEDEIRA MONDIAL PLANETARIA BP-03-B",
+    "type": "Batedeira"
+  },
+  {
+    "id": "76154",
+    "brand": "Colormaq",
+    "name": "BEBEDOURO PRO BCC2",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/76154.jpg",
+    "tags": "Bebedouro Portáteis BEBEDOURO COLORMAQ PRO BCC2",
+    "type": "Bebedouro"
+  },
+  {
+    "id": "73226",
+    "brand": "Britânia",
+    "name": "CAFETEIRA BCF19A 18X",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/73226.jpg",
+    "tags": "Cafeteira Portáteis CAFETEIRA BRITANIA BCF19A 18X",
+    "type": "Cafeteira"
+  },
+  {
+    "id": "67127",
+    "brand": "Electrolux",
+    "name": "CAFETEIRA ECM10 15X",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/67127.jpg",
+    "tags": "Cafeteira Portáteis CAFETEIRA ELECTROLUX ECM10 15X",
+    "type": "Cafeteira"
+  },
+  {
+    "id": "74643",
+    "brand": "Itatiaia",
+    "name": "CHALEIRA ELETRICA 1,8L",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/74643.jpg",
+    "tags": "Chaleira Portáteis CHALEIRA ELETRICA ITATIAIA 1,8L",
+    "type": "Chaleira"
+  },
+  {
+    "id": "76991",
+    "brand": "Midea",
+    "name": "CHALEIRA ELETRICA DOUBLE WALL 1,7L",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/76991.jpg",
+    "tags": "Chaleira Portáteis CHALEIRA ELETRICA MIDEA DOUBLE WALL 1,7L",
+    "type": "Chaleira"
+  },
+  {
+    "id": "67767",
+    "brand": "Mondial",
+    "name": "CHALEIRA ELETRICA CE-06 2L",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/67767.jpg",
+    "tags": "Chaleira Portáteis CHALEIRA ELETRICA MONDIAL CE-06 2L",
+    "type": "Chaleira"
+  },
+  {
+    "id": "73416",
+    "brand": "Britânia",
+    "name": "CHURRASQUEIRA ELETRICA BCQ40",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/73416.jpg",
+    "tags": "Churrasqueira elétrica Portáteis CHURRASQUEIRA ELETRICA BRITANIA BCQ40",
+    "type": "Churrasqueira elétrica"
+  },
+  {
+    "id": "48116",
+    "brand": "Malta",
+    "name": "CILINDRO ELETRICO C/ CORTADOR TALHARIM 1012",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/48116.jpg",
+    "tags": "Cilindro elétrico Portáteis CILINDRO ELETRICO MALTA C/ CORTADOR TALHARIM 1012",
+    "type": "Cilindro elétrico"
+  },
+  {
+    "id": "68033",
+    "brand": "Philco",
+    "name": "CLIMATIZADOR PCL10 Q/F",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/68033.jpg",
+    "tags": "Climatizador Portáteis CLIMATIZADOR PHILCO PCL10 Q/F",
+    "type": "Climatizador"
+  },
+  {
+    "id": "73231",
+    "brand": "Ventisol",
+    "name": "CLIMATIZADOR FRIO 80L CLIN80PRO 150W",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/73231.jpg",
+    "tags": "Climatizador Portáteis CLIMATIZADOR VENTISOL FRIO 80L CLIN80PRO 150W",
+    "type": "Climatizador"
+  },
+  {
+    "id": "68312",
+    "brand": "Britânia",
+    "name": "ESCOVA SECADORA BEC02PR",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/68312.jpg",
+    "tags": "Escova secadora Portáteis ESCOVA SECADORA BRITANIA BEC02PR",
+    "type": "Escova secadora"
+  },
+  {
+    "id": "59849",
+    "brand": "Mondial",
+    "name": "ESPREMEDOR PREMIUM E-02",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/59849.jpg",
+    "tags": "Espremedor Portáteis ESPREMEDOR MONDIAL PREMIUM E-02",
+    "type": "Espremedor"
+  },
+  {
+    "id": "4294",
+    "brand": "Tramontina",
+    "name": "FAQUEIRO BUZIOS 24 PCS",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/4294.jpg",
+    "tags": "Faqueiro Portáteis FAQUEIRO TRAMONTINA BUZIOS 24 PCS",
+    "type": "Faqueiro"
+  },
+  {
+    "id": "68418",
+    "brand": "Tramontina",
+    "name": "FAQUEIRO IPANEMA POTE 24 PCS",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/68418.jpg",
+    "tags": "Faqueiro Portáteis FAQUEIRO TRAMONTINA IPANEMA POTE 24 PCS",
+    "type": "Faqueiro"
+  },
+  {
+    "id": "68417",
+    "brand": "Tramontina",
+    "name": "FAQUEIRO LEME POTE 20 PCS",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/68417.jpg",
+    "tags": "Faqueiro Portáteis FAQUEIRO TRAMONTINA LEME POTE 20 PCS",
+    "type": "Faqueiro"
+  },
+  {
+    "id": "65744",
+    "brand": "Britânia",
+    "name": "FERRO DE PASSAR A VAPOR CERAMIC BFV2000",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/65744.jpg",
+    "tags": "Ferro de passar Portáteis FERRO DE PASSAR A VAPOR BRITANIA CERAMIC BFV2000",
+    "type": "Ferro de passar"
+  },
+  {
+    "id": "76562",
+    "brand": "Britânia",
+    "name": "FERRO DE PASSAR SECO BFS50A BASE ANTIADER",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/76562.jpg",
+    "tags": "Ferro de passar Portáteis FERRO DE PASSAR SECO BRITANIA BFS50A BASE ANTIADER",
+    "type": "Ferro de passar"
+  },
+  {
+    "id": "68061",
+    "brand": "Electrolux",
+    "name": "FERRO DE PASSAR A VAPOR EFFICIENT ESI10",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/68061.jpg",
+    "tags": "Ferro de passar Portáteis FERRO DE PASSAR A VAPOR ELECTROLUX EFFICIENT ESI10",
+    "type": "Ferro de passar"
+  },
+  {
+    "id": "76396",
+    "brand": "Mondial",
+    "name": "FERRO DE PASSAR A VAPOR F-32",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/76396.jpg",
+    "tags": "Ferro de passar Portáteis FERRO DE PASSAR A VAPOR MONDIAL F-32",
+    "type": "Ferro de passar"
+  },
+  {
+    "id": "76395",
+    "brand": "Mondial",
+    "name": "FERRO DE PASSAR A VAPOR F-53",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/76395.jpg",
+    "tags": "Ferro de passar Portáteis FERRO DE PASSAR A VAPOR MONDIAL F-53",
+    "type": "Ferro de passar"
+  },
+  {
+    "id": "76993",
+    "brand": "Midea",
+    "name": "FRITADEIRA AIR FRYER OVEN 12L DIGITAL FWM12",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/76993.jpg",
+    "tags": "Fritadeira Portáteis FRITADEIRA MIDEA AIR FRYER OVEN 12L DIGITAL FWM12",
+    "type": "Fritadeira"
+  },
+  {
+    "id": "74928",
+    "brand": "Midea",
+    "name": "FRITADEIRA AIR FRYER WIDEMAX 4,5L",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/74928.jpg",
+    "tags": "Fritadeira Portáteis FRITADEIRA MIDEA AIR FRYER WIDEMAX 4,5L",
+    "type": "Fritadeira"
+  },
+  {
+    "id": "74319",
+    "brand": "Philco",
+    "name": "FRITADEIRA AIR FRYER OVEN 16L DIGITAL PAF16",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/74319.jpg",
+    "tags": "Fritadeira Portáteis FRITADEIRA PHILCO AIR FRYER OVEN 16L DIGITAL PAF16",
+    "type": "Fritadeira"
+  },
+  {
+    "id": "67098",
+    "brand": "Britânia",
+    "name": "GRILL PRESS BGR27I",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/67098.jpg",
+    "tags": "Grill Portáteis GRILL BRITANIA PRESS BGR27I",
+    "type": "Grill"
+  },
+  {
+    "id": "77133",
+    "brand": "Philco",
+    "name": "GRILL REDSTONE PGR19",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/77133.jpg",
+    "tags": "Grill Portáteis GRILL PHILCO REDSTONE PGR19",
+    "type": "Grill"
+  },
+  {
+    "id": "76469",
+    "brand": "WAP",
+    "name": "DESOBSTRUIDORA LAVAD PRESSAO BRAVO ULTRA 2550",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/76469.jpg",
+    "tags": "Lavadora de pressão Portáteis DESOBSTRUIDORA LAVAD PRESSAO WAP BRAVO ULTRA 2550",
+    "type": "Lavadora de pressão"
+  },
+  {
+    "id": "76468",
+    "brand": "WAP",
+    "name": "DESOBSTRUIDORA LAVAD PRESSAO OUSADA ULTRA WL 2610",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/76468.jpg",
+    "tags": "Lavadora de pressão Portáteis DESOBSTRUIDORA LAVAD PRESSAO WAP OUSADA ULTRA WL 2610",
+    "type": "Lavadora de pressão"
+  },
+  {
+    "id": "76467",
+    "brand": "WAP",
+    "name": "LAVADORA PRESSAO WL 1800",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/76467.jpg",
+    "tags": "Lavadora de pressão Portáteis LAVADORA PRESSAO WAP WL 1800",
+    "type": "Lavadora de pressão"
+  },
+  {
+    "id": "66218",
+    "brand": "Britânia",
+    "name": "LIQUIDIFICADOR BLQ900A",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/66218.jpg",
+    "tags": "Liquidificador Portáteis LIQUIDIFICADOR BRITANIA BLQ900A",
+    "type": "Liquidificador"
+  },
+  {
+    "id": "66219",
+    "brand": "Britânia",
+    "name": "LIQUIDIFICADOR TURBO BLQ1300",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/66219.jpg",
+    "tags": "Liquidificador Portáteis LIQUIDIFICADOR BRITANIA TURBO BLQ1300",
+    "type": "Liquidificador"
+  },
+  {
+    "id": "65728",
+    "brand": "Mondial",
+    "name": "LIQUIDIFICADOR EASY POWER L-550W",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/65728.jpg",
+    "tags": "Liquidificador Portáteis LIQUIDIFICADOR MONDIAL EASY POWER L-550W",
+    "type": "Liquidificador"
+  },
+  {
+    "id": "73657",
+    "brand": "Mondial",
+    "name": "LIQUIDIFICADOR L-98-B",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/73657.jpg",
+    "tags": "Liquidificador Portáteis LIQUIDIFICADOR MONDIAL L-98-B",
+    "type": "Liquidificador"
+  },
+  {
+    "id": "68983",
+    "brand": "Philco",
+    "name": "LIQUIDIFICADOR PLQ2100",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/68983.jpg",
+    "tags": "Liquidificador Portáteis LIQUIDIFICADOR PHILCO PLQ2100",
+    "type": "Liquidificador"
+  },
+  {
+    "id": "76328",
+    "brand": "Britânia",
+    "name": "MIXER BMX40A 400W",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/76328.jpg",
+    "tags": "Mixer Portáteis MIXER BRITANIA BMX40A 400W",
+    "type": "Mixer"
+  },
+  {
+    "id": "72631",
+    "brand": "Mondial",
+    "name": "MIXER M-15-B",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/72631.jpg",
+    "tags": "Mixer Portáteis MIXER MONDIAL M-15-B",
+    "type": "Mixer"
+  },
+  {
+    "id": "12553",
+    "brand": "Britânia",
+    "name": "PANELA ELETRICA ARROZ PA1/PA5 5X",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/12553.jpg",
+    "tags": "Panela Portáteis PANELA ELETRICA ARROZ BRITANIA PA1/PA5 5X",
+    "type": "Panela"
+  },
+  {
+    "id": "1363",
+    "brand": "Britânia",
+    "name": "PANELA ELETRICA ARROZ PA7 / PA10 10X",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/1363.jpg",
+    "tags": "Panela Portáteis PANELA ELETRICA ARROZ BRITANIA PA7 / PA10 10X",
+    "type": "Panela"
+  },
+  {
+    "id": "76520",
+    "brand": "MTA",
+    "name": "PANELA PRESSAO 4,5L C/VISOR",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/76520.jpg",
+    "tags": "Panela Portáteis PANELA PRESSAO MTA 4,5L C/VISOR",
+    "type": "Panela"
+  },
+  {
+    "id": "74784",
+    "brand": "Midea",
+    "name": "PANELA ELETRICA ARROZ 3L PAE30P 5X",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/74784.jpg",
+    "tags": "Panela Portáteis PANELA ELETRICA ARROZ MIDEA 3L PAE30P 5X",
+    "type": "Panela"
+  },
+  {
+    "id": "76992",
+    "brand": "Midea",
+    "name": "PANELA PRESSAO ELETRICA DIGITAL 6L",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/76992.jpg",
+    "tags": "Panela Portáteis PANELA PRESSAO ELETRICA MIDEA DIGITAL 6L",
+    "type": "Panela"
+  },
+  {
+    "id": "74674",
+    "brand": "Midea",
+    "name": "PANELA PRESSAO ELETRICA MECANICA 4L",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/74674.jpg",
+    "tags": "Panela Portáteis PANELA PRESSAO ELETRICA MIDEA MECANICA 4L",
+    "type": "Panela"
+  },
+  {
+    "id": "68955",
+    "brand": "Mondial",
+    "name": "PANELA ELETRICA ARROZ 5L PE-44 10X",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/68955.jpg",
+    "tags": "Panela Portáteis PANELA ELETRICA ARROZ MONDIAL 5L PE-44 10X",
+    "type": "Panela"
+  },
+  {
+    "id": "76504",
+    "brand": "Panelux",
+    "name": "PANELA PRESSAO ANTIADERENTE 4,5L",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/76504.jpg",
+    "tags": "Panela Portáteis PANELA PRESSAO PANELUX ANTIADERENTE 4,5L",
+    "type": "Panela"
+  },
+  {
+    "id": "76505",
+    "brand": "Panelux",
+    "name": "PANELA PRESSAO FECHAMENTO EXTERNO 4,5L",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/76505.jpg",
+    "tags": "Panela Portáteis PANELA PRESSAO PANELUX FECHAMENTO EXTERNO 4,5L",
+    "type": "Panela"
+  },
+  {
+    "id": "55800",
+    "brand": "Britânia",
+    "name": "PANIFICADORA MULTIPANE",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/55800.jpg",
+    "tags": "Panificadora Portáteis PANIFICADORA BRITANIA MULTIPANE",
+    "type": "Panificadora"
+  },
+  {
+    "id": "66209",
+    "brand": "Mondial",
+    "name": "PRANCHA P-27 LINE",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/66209.jpg",
+    "tags": "Prancha Portáteis PRANCHA MONDIAL P-27 LINE",
+    "type": "Prancha"
+  },
+  {
+    "id": "76305",
+    "brand": "Mondial",
+    "name": "MINI PROCESSADOR MP-05-B 150W",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/76305.jpg",
+    "tags": "Processador Portáteis MINI PROCESSADOR MONDIAL MP-05-B 150W",
+    "type": "Processador"
+  },
+  {
+    "id": "76153",
+    "brand": "Colormaq",
+    "name": "PURIFICADOR PRO PCC2P",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/76153.jpg",
+    "tags": "Purificador Portáteis PURIFICADOR COLORMAQ PRO PCC2P",
+    "type": "Purificador"
+  },
+  {
+    "id": "50102",
+    "brand": "Fama",
+    "name": "SANDUICHEIRA SAND GRILL FGR01",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/50102.jpg",
+    "tags": "Sanduicheira Portáteis SANDUICHEIRA FAMA SAND GRILL FGR01",
+    "type": "Sanduicheira"
+  },
+  {
+    "id": "74374",
+    "brand": "Itatiaia",
+    "name": "SANDUICHEIRA ESSENCIAL",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/74374.jpg",
+    "tags": "Sanduicheira Portáteis SANDUICHEIRA ITATIAIA ESSENCIAL",
+    "type": "Sanduicheira"
+  },
+  {
+    "id": "76399",
+    "brand": "Mondial",
+    "name": "SANDUICHEIRA S-20",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/76399.jpg",
+    "tags": "Sanduicheira Portáteis SANDUICHEIRA MONDIAL S-20",
+    "type": "Sanduicheira"
+  },
+  {
+    "id": "74316",
+    "brand": "Britânia",
+    "name": "SECADOR ION TOURMALINE BSC1200 1200W",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/74316.jpg",
+    "tags": "Secador Portáteis SECADOR BRITANIA ION TOURMALINE BSC1200 1200W",
+    "type": "Secador"
+  },
+  {
+    "id": "64518",
+    "brand": "Taiff",
+    "name": "SECADOR STYLE 2000W",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/64518.jpg",
+    "tags": "Secador Portáteis SECADOR TAIFF STYLE 2000W",
+    "type": "Secador"
+  },
+  {
+    "id": "55256",
+    "brand": "Mor",
+    "name": "TABUA DE PASSAR NICE 4008",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/55256.jpg",
+    "tags": "Tábua de passar Portáteis TABUA DE PASSAR MOR NICE 4008",
+    "type": "Tábua de passar"
+  },
+  {
+    "id": "55255",
+    "brand": "Mor",
+    "name": "VARAL CHAO ACO C/ ABAS 6105",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/55255.jpg",
+    "tags": "Varal Portáteis VARAL MOR CHAO ACO C/ ABAS 6105",
+    "type": "Varal"
+  },
+  {
+    "id": "74400",
+    "brand": "Mor",
+    "name": "VARAL CHAO ALUMINIO C/ ABAS 6140",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/74400.jpg",
+    "tags": "Varal Portáteis VARAL MOR CHAO ALUMINIO C/ ABAS 6140",
+    "type": "Varal"
+  },
+  {
+    "id": "76760",
+    "brand": "Britânia",
+    "name": "VENTILADOR COLUNA 40CM BVC41A 160W",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/76760.jpg",
+    "tags": "Ventilador Portáteis VENTILADOR COLUNA BRITANIA 40CM BVC41A 160W",
+    "type": "Ventilador"
+  },
+  {
+    "id": "68726",
+    "brand": "Britânia",
+    "name": "VENTILADOR MESA 40CM BVT400 150W",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/68726.jpg",
+    "tags": "Ventilador Portáteis VENTILADOR MESA BRITANIA 40CM BVT400 150W",
+    "type": "Ventilador"
+  },
+  {
+    "id": "68731",
+    "brand": "Mondial",
+    "name": "VENTILADOR COLUNA 40CM VSP-40C-NB 140W",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/68731.jpg",
+    "tags": "Ventilador Portáteis VENTILADOR COLUNA MONDIAL 40CM VSP-40C-NB 140W",
+    "type": "Ventilador"
+  },
+  {
+    "id": "66383",
+    "brand": "Mondial",
+    "name": "VENTILADOR MESA SUPER POWER 40CM VSP-40-B 140W",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/66383.jpg",
+    "tags": "Ventilador Portáteis VENTILADOR MESA MONDIAL SUPER POWER 40CM VSP-40-B 140W",
+    "type": "Ventilador"
+  },
+  {
+    "id": "68732",
+    "brand": "Mondial",
+    "name": "VENTILADOR PAREDE 50CM NVP-PRO-50 150W",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/68732.jpg",
+    "tags": "Ventilador Portáteis VENTILADOR PAREDE MONDIAL 50CM NVP-PRO-50 150W",
+    "type": "Ventilador"
+  },
+  {
+    "id": "76969",
+    "brand": "Ventisol",
+    "name": "VENTILADOR MESA SUPER TURBO 40CM 130W",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/76969.jpg",
+    "tags": "Ventilador Portáteis VENTILADOR MESA VENTISOL SUPER TURBO 40CM 130W",
+    "type": "Ventilador"
+  },
+  {
+    "id": "76734",
+    "brand": "Ventisol",
+    "name": "VENTILADOR MESA TURBO 30CM 52W",
+    "model": "",
+    "category": "Eletroportáteis",
+    "image": "produtos/76734.jpg",
+    "tags": "Ventilador Portáteis VENTILADOR MESA VENTISOL TURBO 30CM 52W",
+    "type": "Ventilador"
+  },
+  {
+    "id": "74729",
+    "brand": "Track",
+    "name": "BICICLETA ARO 16 TK3 PINK",
+    "model": "",
+    "category": "Esporte e lazer",
+    "image": "produtos/74729.jpg",
+    "tags": "Bicicleta Esporte e Lazer BICICLETA TRACK ARO 16 TK3 PINK",
+    "type": "Bicicleta",
+    "dimensions": "0,72 x 0,56 x 1,13"
+  },
+  {
+    "id": "2763",
+    "brand": "Mor",
+    "name": "CADEIRA DE PRAIA ALTA FERRO",
+    "model": "",
+    "category": "Esporte e lazer",
+    "image": "produtos/2763.jpg",
+    "tags": "Cadeira de praia Esporte e Lazer CADEIRA DE PRAIA MOR ALTA FERRO",
+    "type": "Cadeira de praia"
+  },
+  {
+    "id": "68956",
+    "brand": "Mor",
+    "name": "PISCINA 1000L 1002 RETANGULAR",
+    "model": "",
+    "category": "Esporte e lazer",
+    "image": "produtos/68956.jpg",
+    "tags": "Piscina Esporte e Lazer PISCINA MOR 1000L 1002 RETANGULAR",
+    "type": "Piscina"
+  },
+  {
+    "id": "76296",
+    "brand": "Motorola",
+    "name": "SMARTPHONE G06 XT2535 128GB 4G",
+    "model": "",
+    "category": "Telefonia",
+    "image": "produtos/76296.jpg",
+    "tags": "Smartphone Smartphones SMARTPHONE MOTOROLA G06 XT2535 128GB 4G",
+    "type": "Smartphone"
+  },
+  {
+    "id": "76329",
+    "brand": "Motorola",
+    "name": "SMARTPHONE G06 XT2535 256GB 4G",
+    "model": "",
+    "category": "Telefonia",
+    "image": "produtos/76329.jpg",
+    "tags": "Smartphone Smartphones SMARTPHONE MOTOROLA G06 XT2535 256GB 4G",
+    "type": "Smartphone"
+  },
+  {
+    "id": "76471",
+    "brand": "Motorola",
+    "name": "SMARTPHONE G17 XT2623 128GB 4G",
+    "model": "",
+    "category": "Telefonia",
+    "image": "produtos/76471.jpg",
+    "tags": "Smartphone Smartphones SMARTPHONE MOTOROLA G17 XT2623 128GB 4G",
+    "type": "Smartphone"
+  },
+  {
+    "id": "74970",
+    "brand": "Samsung",
+    "name": "SMARTPHONE A17 A175 256GB 4G",
+    "model": "",
+    "category": "Telefonia",
+    "image": "produtos/74970.jpg",
+    "tags": "Smartphone Smartphones SMARTPHONE SAMSUNG A17 A175 256GB 4G",
+    "type": "Smartphone"
+  },
+  {
+    "id": "77089",
+    "brand": "Samsung",
+    "name": "SMARTPHONE A27 A276 256GB 5G",
+    "model": "",
+    "category": "Telefonia",
+    "image": "produtos/77089.jpg",
+    "tags": "Smartphone Smartphones SMARTPHONE SAMSUNG A27 A276 256GB 5G",
+    "type": "Smartphone"
+  },
+  {
+    "id": "76485",
+    "brand": "Samsung",
+    "name": "SMARTPHONE A37 A376 128GB 5G",
+    "model": "",
+    "category": "Telefonia",
+    "image": "produtos/76485.jpg",
+    "tags": "Smartphone Smartphones SMARTPHONE SAMSUNG A37 A376 128GB 5G",
+    "type": "Smartphone"
+  },
+  {
+    "id": "76484",
+    "brand": "Samsung",
+    "name": "SMARTPHONE A37 A376 256GB 5G",
+    "model": "",
+    "category": "Telefonia",
+    "image": "produtos/76484.jpg",
+    "tags": "Smartphone Smartphones SMARTPHONE SAMSUNG A37 A376 256GB 5G",
+    "type": "Smartphone"
+  },
+  {
+    "id": "76483",
+    "brand": "Samsung",
+    "name": "SMARTPHONE A57 A576 128GB 5G",
+    "model": "",
+    "category": "Telefonia",
+    "image": "produtos/76483.jpg",
+    "tags": "Smartphone Smartphones SMARTPHONE SAMSUNG A57 A576 128GB 5G",
+    "type": "Smartphone"
+  },
+  {
+    "id": "76482",
+    "brand": "Samsung",
+    "name": "SMARTPHONE A57 A576 256GB 5G",
+    "model": "",
+    "category": "Telefonia",
+    "image": "produtos/76482.jpg",
+    "tags": "Smartphone Smartphones SMARTPHONE SAMSUNG A57 A576 256GB 5G",
+    "type": "Smartphone"
+  },
+  {
+    "id": "77087",
+    "brand": "Samsung",
+    "name": "SMARTPHONE S26 FE S741 128GB 5G",
+    "model": "",
+    "category": "Telefonia",
+    "image": "produtos/77087.jpg",
+    "tags": "Smartphone Smartphones SMARTPHONE SAMSUNG S26 FE S741 128GB 5G",
+    "type": "Smartphone"
+  },
+  {
+    "id": "72461",
+    "brand": "Poquema",
+    "name": "BALCAO 1,20MT SEM TAMPO PRA PIA",
+    "model": "",
+    "category": "Móveis",
+    "image": "produtos/72461.jpg",
+    "tags": "Balcão Móveis BALCAO POQUEMA 1,20MT SEM TAMPO PRA PIA",
+    "type": "Balcão",
+    "dimensions": "0,81 x 1,20 x 0,52"
+  },
+  {
+    "id": "50857",
+    "brand": "Ecoflex",
+    "name": "COLCHAO D23 ECOLINE 138X188X14",
+    "model": "",
+    "category": "Móveis",
+    "image": "produtos/50857.jpg",
+    "tags": "Colchão Móveis COLCHAO ECOFLEX D23 ECOLINE 138X188X14",
+    "type": "Colchão",
+    "dimensions": "0,14 x 1,38 x 1,88"
+  },
+  {
+    "id": "50855",
+    "brand": "Ecoflex",
+    "name": "COLCHAO D23 ECOLINE 78X188X14",
+    "model": "",
+    "category": "Móveis",
+    "image": "produtos/50855.jpg",
+    "tags": "Colchão Móveis COLCHAO ECOFLEX D23 ECOLINE 78X188X14",
+    "type": "Colchão",
+    "dimensions": "0,14 x 0,78 x 1,88"
+  },
+  {
+    "id": "50856",
+    "brand": "Ecoflex",
+    "name": "COLCHAO D23 ECOLINE 88X188X14",
+    "model": "",
+    "category": "Móveis",
+    "image": "produtos/50856.jpg",
+    "tags": "Colchão Móveis COLCHAO ECOFLEX D23 ECOLINE 88X188X14",
+    "type": "Colchão",
+    "dimensions": "0,14 x 0,88 x 1,88"
+  },
+  {
+    "id": "72275",
+    "brand": "Aramóveis",
+    "name": "KIT COZINHA SIENA 6 PORTAS 1 GAVETA",
+    "model": "",
+    "category": "Móveis",
+    "image": "produtos/72275.jpg",
+    "tags": "Cozinha Móveis KIT COZINHA ARAMOVEIS SIENA 6 PORTAS 1 GAVETA",
+    "type": "Cozinha",
+    "dimensions": "1,92 x 1,60 x 0,395"
+  },
+  {
+    "id": "68673",
+    "brand": "Demobile",
+    "name": "G ROUPA LORD 4 PORTAS 2 GAVETAS",
+    "model": "",
+    "category": "Móveis",
+    "image": "produtos/68673.jpg",
+    "tags": "Guarda-roupa Móveis G ROUPA DEMOBILE LORD 4 PORTAS 2 GAVETAS",
+    "type": "Guarda-roupa",
+    "dimensions": "1,81 x 1,48 x 0,47"
   }
 ]

@@ -7,8 +7,8 @@
   <meta name="description" content="Explore móveis, eletrodomésticos e tecnologia para revenda. Conheça o MM Atacado, do Grupo MM.">
   <title>MM Atacado | Móveis e eletros no atacado para lojistas</title>
   <link rel="icon" href="assets/mm-atacado.png">
-  <link rel="stylesheet" href="styles.css?v=32">
-  <script src="app.js?v=23" defer></script>
+  <link rel="stylesheet" href="styles.css?v=33">
+  <script src="app.js?v=24" defer></script>
 </head>
 <body class="home corporate">
   <a class="skip" href="#principal">Pular para o conteúdo</a>
@@ -54,10 +54,18 @@
   <main id="principal">
     <section class="corporate-hero campaign-hero" id="inicio" aria-label="Campanhas e produtos MM Atacado">
       <div class="hero-stage">
-      <article class="hero-scene" id="hero-campaign" aria-labelledby="campaign-title">
+      <article class="hero-scene hero-routine" id="hero-routine" aria-labelledby="routine-title">
+        <img class="routine-photo" src="assets/hero-rotina.webp" width="1376" height="768" fetchpriority="high" alt="Família reunida na cozinha preparando uma receita com eletrodomésticos presentes no dia a dia">
+        <div class="hero-copy">
+          <p class="eyebrow">MM ATACADO</p>
+          <h1 id="routine-title">Fazemos parte <br>da sua <span>rotina</span></h1>
+          <div class="hero-actions"><a class="button red" href="#catalogo">Explore nossos produtos</a></div>
+        </div>
+      </article>
+      <article class="hero-scene" id="hero-campaign" aria-labelledby="campaign-title" hidden>
         <div class="hero-copy">
           <p class="eyebrow">MM ATACADO · 10 ANOS</p>
-          <h1 id="campaign-title">Black <br><span>Fábrica.</span></h1>
+          <h2 id="campaign-title">Black <br><span>Fábrica.</span></h2>
           <p class="hero-description">Móveis, eletros e tecnologia para renovar o mix da sua loja.</p>
           <div class="hero-actions">
             <a class="button red" href="#catalogo">Explorar produtos <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
@@ -65,7 +73,7 @@
           </div>
         </div>
         <a class="hero-art" href="#catalogo" aria-label="Explorar os produtos da Black Fábrica">
-          <img class="campaign-art" src="assets/hero-samsung.webp" width="1493" height="739" fetchpriority="high" alt="Seleção de produtos Samsung com televisores, refrigeradores, lavadora, ar-condicionado e eletrônicos">
+          <img class="campaign-art" src="assets/hero-samsung.webp" width="1493" height="739" alt="Seleção de produtos Samsung com televisores, refrigeradores, lavadora, ar-condicionado e eletrônicos">
         </a>
       </article>
       <article class="hero-scene" id="hero-selection" aria-labelledby="selection-title" hidden>
@@ -97,7 +105,8 @@
       <div class="hero-controls">
         <div class="hero-timer" aria-hidden="true"><span></span></div>
         <div class="hero-options" role="group" aria-label="Escolher destaque">
-          <button type="button" data-hero-scene="hero-campaign" aria-pressed="true" aria-controls="hero-campaign">Black Fábrica</button>
+          <button type="button" data-hero-scene="hero-routine" aria-pressed="true" aria-controls="hero-routine">Sua rotina</button>
+          <button type="button" data-hero-scene="hero-campaign" aria-pressed="false" aria-controls="hero-campaign">Black Fábrica</button>
           <button type="button" data-hero-scene="hero-centers" aria-pressed="false" aria-controls="hero-centers">Nossos CDs</button>
           <button type="button" data-hero-scene="hero-selection" aria-pressed="false" aria-controls="hero-selection">Seleção de produtos</button>
         </div>
@@ -222,7 +231,7 @@
         <div class="filters" role="group" aria-label="Filtrar por categoria" id="filters"></div>
         <div class="results-bar"><p id="results" role="status" aria-live="polite"></p><button type="button" id="reset" class="plain" hidden>Limpar busca</button></div>
         <div class="products" id="products"></div>
-        <p class="catalog-note">Vitrine demonstrativa com itens do catálogo MM. Consulte preços, estoque e condições com o time comercial.</p>
+        <p class="catalog-note">Produtos do catálogo MM. Consulte preços, estoque e condições com o time comercial.</p>
       </section>
 
 

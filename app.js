@@ -8,7 +8,7 @@ const stopWords = new Set('a ao as com da das de do dos e em eu me minha meu na 
 const normalize = text => text.toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu, '');
 const tokenize = text => normalize(text).match(/[a-z0-9]+/g) ?? [];
 const icon = name => '<svg aria-hidden="true"><use href="#i-' + name + '"/></svg>';
-const photo = product => product.image.startsWith('uploads/') ? product.image : 'assets/' + product.image + '.webp';
+const photo = product => product.image.startsWith('uploads/') ? product.image : 'assets/' + product.image + (/\.(webp|jpe?g|png|svg)$/i.test(product.image) ? '' : '.webp');
 const productLabel = product => product.brand + ' ' + product.name;
 const byId = id => catalog.find(product => product.id === id);
 
@@ -131,7 +131,7 @@ function renderDialog() {
     const product = dialogProduct;
     const selected = selection.has(product.id);
     dialogContent.innerHTML = `<div class="dialog-product"><img class="dialog-photo" src="${escapeHtml(photo(product))}" alt="${escapeHtml(productLabel(product))}">
-      <div><h2 id="dialog-title">${escapeHtml(productLabel(product))}</h2><p>Modelo ${escapeHtml(product.model)} · Cód. ${escapeHtml(product.id)}</p><p>Consulte estoque, preço e condições com o time comercial.</p>
+      <div><h2 id="dialog-title">${escapeHtml(productLabel(product))}</h2><p>${product.model ? `Modelo ${escapeHtml(product.model)} · ` : ''}Cód. ${escapeHtml(product.id)}</p>${product.dimensions ? `<p>Medidas (altura × largura × profundidade): ${escapeHtml(product.dimensions)} m</p>` : ''}<p>Consulte estoque, preço e condições com o time comercial.</p>
       <div class="dialog-actions"><button type="button" class="button red" data-select="${escapeHtml(product.id)}">${icon(selected ? 'check' : 'plus')} ${selected ? 'Remover da seleção' : 'Adicionar à seleção'}</button><a class="button dark" href="${quoteLink([product])}">Consultar produto</a></div></div></div>`;
     return;
   }
